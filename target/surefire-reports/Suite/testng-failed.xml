@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" verbose="0" name="Run on FireFox UI(failed)" parallel="tests">
+    <parameter name="Browser" value="chrome_ui"/>
+    <classes>
+      <class name="reportConfig.ReportV4">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="TC_01"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- reportConfig.ReportV4 -->
+    </classes>
+  </test> <!-- Run on FireFox UI(failed) -->
+</suite> <!-- Failed suite [Suite] -->

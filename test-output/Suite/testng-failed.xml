@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="tests">
+  <parameter name="url" value="https://demo.nopcommerce.com/"/>
+  <listeners>
+    <listener class-name="reportConfig.TestListeners"/>
+    <listener class-name="commons.MethodListener"/>
+  </listeners>
+  <test thread-count="5" name="Run on FireFox UI(failed)" parallel="tests">
+    <parameter name="Browser" value="firefox_ui"/>
+    <classes>
+      <class name="com.nopcommerce.common.Common_01_Register">
+        <methods>
+          <include name="TC_04_Register_Succes"/>
+          <include name="TC_02_Register_Wrong_Email"/>
+          <include name="TC_03_Register_Pass_At_Least_6"/>
+          <include name="TC_01_Register_Empty_Data"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.nopcommerce.common.Common_01_Register -->
+    </classes>
+  </test> <!-- Run on FireFox UI(failed) -->
+</suite> <!-- Failed suite [Suite] -->

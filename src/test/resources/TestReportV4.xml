@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="Suite" parallel="tests" thread-cound="2">
+	<parameter name="url" value="https://demo.nopcommerce.com/" />
+	<listeners>
+		<listener class-name="reportConfig.TestListeners" />
+		<listener class-name="commons.MethodListener"/>
+	</listeners>
+	<test name="Run on FireFox UI">
+		<parameter name="Browser" value="firefox_ui" />
+		<classes>
+			<class name="com.nopcommerce.common.Common_01_Register" />
+<!-- 			<class name="reportConfig.TestClassUsingListeners" /> -->
+			
+		</classes>
+	</test>
+
+
+</suite>
