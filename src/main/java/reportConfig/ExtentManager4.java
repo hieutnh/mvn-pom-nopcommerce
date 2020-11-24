@@ -10,7 +10,7 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 public class ExtentManager4 {
 	private static ExtentReports extent;
 
-	public static ExtentReports createInstance() {
+	public synchronized static ExtentReports createInstance() {
 		String fileName = getReportName();
 		String directory = System.getProperty("user.dir") + "/reports/";
 		new File(directory).mkdirs();

@@ -1,11 +1,13 @@
 package commons;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.joda.time.DateTime;
@@ -20,6 +22,7 @@ import org.openqa.selenium.safari.SafariDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeSuite;
+
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -42,30 +45,31 @@ public class AbstractTest {
 			options.addPreference("browser.download.folderList", 2);
 			options.addPreference("browser.download.dir", GlobalConstants.DOWNLOAD_FOLDER);
 			options.addPreference("browser.download.userDownloadDir", true);
-			//download file csv
+			// download file csv
 			options.addPreference("browser.helperApps.neverAsk.saveToDisk", "application/octet-stream");
-			//download file pdf
+			// download file pdf
 			options.addPreference("browser.helperApps.neverAsk.saveToDisk", "application/csv");
 			options.addPreference("pdfjs.disabled", true);
 			setDriver(new FirefoxDriver());
 		} else if (BrowserName.equalsIgnoreCase("chrome_ui")) {
 			WebDriverManager.chromedriver().setup();
-			
+
 			// download file
 			HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
 			chromePrefs.put("profile.default_content_settings.popups", 0);
 			chromePrefs.put("download.default_directory", GlobalConstants.DOWNLOAD_FOLDER);
 			ChromeOptions options = new ChromeOptions();
 			options.setExperimentalOption("prefs", chromePrefs);
-			
-			//Your connection is not private
+
+			// Your connection is not private
 			options.addArguments("test-type");
-		    options.addArguments("ignore-certificate-errors");
-			
+			options.addArguments("ignore-certificate-errors");
+
 			// dissable infobars chrome
 			options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
 			options.setExperimentalOption("useAutomationExtension", false);
 			setDriver(new ChromeDriver(options));
+
 		} else if (BrowserName.equalsIgnoreCase("coccoc")) {
 			WebDriverManager.chromedriver().driverVersion("81.0.4044.138").setup();
 			ChromeOptions options = new ChromeOptions();
@@ -246,10 +250,11 @@ public class AbstractTest {
 		System.out.println("-------------------END delete file in folder-------------------");
 	}
 
+
 	private void deleteAllFileInFolder() {
 		try {
 			String workingDir = System.getProperty("user.dir");
-			String pathFolderDownload = workingDir + "\\ReportNGScreenShots";
+			String pathFolderDownload = workingDir + "\\screenshots";
 			File file = new File(pathFolderDownload);
 			File[] listOfFiles = file.listFiles();
 			for (int i = 0; i < listOfFiles.length; i++) {
@@ -262,6 +267,7 @@ public class AbstractTest {
 			System.out.println(e.getMessage());
 		}
 	}
+
 
 	// config theo dự án, và format dd/mm/yyyy
 	protected String getToday() {

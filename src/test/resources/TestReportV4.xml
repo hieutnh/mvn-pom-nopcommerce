@@ -3,16 +3,21 @@
 	<parameter name="url" value="https://demo.nopcommerce.com/" />
 	<listeners>
 		<listener class-name="reportConfig.TestListeners" />
-		<listener class-name="commons.MethodListener"/>
+		<listener class-name="commons.MethodListener" />
 	</listeners>
-	<test name="Run on FireFox UI">
-		<parameter name="Browser" value="firefox_ui" />
+
+	<test name="Run on Chrome UI">
+		<parameter name="Browser" value="chrome_ui" />
 		<classes>
 			<class name="com.nopcommerce.common.Common_01_Register" />
-<!-- 			<class name="reportConfig.TestClassUsingListeners" /> -->
-			
 		</classes>
 	</test>
 
+<!-- 	<test name="Run on Firefox UI"> -->
+<!-- 		<parameter name="Browser" value="firefox_ui" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.nopcommerce.common.Common_01_Register" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
 
 </suite>

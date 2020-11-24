@@ -9,9 +9,10 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.Status;
 
 import commons.AbstractTest;
+import commons.DataHelper;
+import driverFactory.DriverManager;
 import pageOjects.PageGeneratorManager;
 import pageOjects.addressesPageObject;
 import pageOjects.customerInfoPageObject;
@@ -25,33 +26,34 @@ import pageOjects.stockSubscriptionsObject;
 
 public class Common_01_Register extends AbstractTest {
 	WebDriver driver;
+	DriverManager driverManager;
 	ExtentReports extent;
 	ExtentTest extentTest;
 	Select select;
-	public static String email, pass, firstname, lastname, reEmail;
+	public static String email, pass, firstname, lastname, reEmail, email2;
 
 	// run all browsers
 	@Parameters({ "Browser", "url" })
 	@BeforeTest
 	public void beforeClass(String BrowserName, String appUrl) {
 		driver = getBrowserDriver(BrowserName, appUrl);
-
+//		driverManager = DriverFactory.getBrowserDriver(BrowserName);
+//		driver = driverManager.getUrl(appUrl);
+		
+		data = DataHelper.getData();
+		
 		firstname = "test";
 		lastname = "thoima";
-		email = "testthoima" + getRanDom() + "@gmail.com";
+		email = data.getEmail();
+		email2 = "test" + getRanDom() + "@gmail.com"; 
 		pass = "123456";
-		reEmail = "testthoima@gmail.com";
 	}
 
 	@Test
 	public void TC_01_Register_Empty_Data() {
-		extentTest = extent.createTest("TC_01_Register_Empty_Data");
-		extentTest.log(Status.INFO, "Open homepage");
 		homePage = PageGeneratorManager.getHomePage(driver);
 		registerPage = homePage.clickToRegisterLink();
-//		extentTest.log(Status.INFO, "Click register link");
 		registerPage.clickRegisterButton();
-//		extentTest.log(Status.INFO, "Get text firstName error");
 		String FirstName_error = registerPage.getTextErrorMessageByID(driver, "FirstName-error");
 		verifyEquals(FirstName_error, "First name is required.");
 
@@ -116,6 +118,7 @@ public class Common_01_Register extends AbstractTest {
 		registerPage.inputConfirmPassToTextBox(pass);
 		registerPage.clickRegisterButton();
 		homePage = registerPage.clickToLogOutButton();
+//		driverManager.removeDriver();
 		removeDriver();
 	}
 
@@ -130,5 +133,5 @@ public class Common_01_Register extends AbstractTest {
 	myProductReviewsPageObject myProductPage;
 	rewardPointsPageObject rewardPointsPage;
 	stockSubscriptionsObject stockSubscriptionsPage;
-
+	private DataHelper data;
 }

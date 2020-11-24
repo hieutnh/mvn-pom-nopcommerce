@@ -3,6 +3,7 @@ package pageOjects;
 import org.openqa.selenium.WebDriver;
 
 import commons.AbstractPage;
+import commons.AbstractTest;
 import pageUIs.RegisterPageUI;
 
 public class registerPageObject extends AbstractPage {
@@ -48,7 +49,6 @@ public class registerPageObject extends AbstractPage {
 	public void inputEmailToTextBox(String email) {
 		waitToElementVisible(driver, RegisterPageUI.EMAIL_TEXBOX);
 		sendkeyToElement(driver, RegisterPageUI.EMAIL_TEXBOX, email);
-
 	}
 
 	public void inputPassToTextBox(String pass) {

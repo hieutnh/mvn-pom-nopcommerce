@@ -6,18 +6,15 @@
     <listener class-name="reportConfig.TestListeners"/>
     <listener class-name="commons.MethodListener"/>
   </listeners>
-  <test thread-count="5" name="Run on FireFox UI(failed)" parallel="tests">
-    <parameter name="Browser" value="firefox_ui"/>
+  <test thread-count="5" name="Run on Chrome UI(failed)" parallel="tests">
+    <parameter name="Browser" value="chrome_ui"/>
     <classes>
       <class name="com.nopcommerce.common.Common_01_Register">
         <methods>
-          <include name="TC_04_Register_Succes"/>
-          <include name="TC_02_Register_Wrong_Email"/>
           <include name="TC_03_Register_Pass_At_Least_6"/>
-          <include name="TC_01_Register_Empty_Data"/>
           <include name="beforeClass"/>
         </methods>
       </class> <!-- com.nopcommerce.common.Common_01_Register -->
     </classes>
-  </test> <!-- Run on FireFox UI(failed) -->
+  </test> <!-- Run on Chrome UI(failed) -->
 </suite> <!-- Failed suite [Suite] -->
