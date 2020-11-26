@@ -20,6 +20,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import io.qameta.allure.Step;
 import pageOjects.PageGeneratorManager;
 import pageOjects.addressesPageObject;
 import pageOjects.customerInfoPageObject;
@@ -171,6 +172,12 @@ public class AbstractPage {
 		select = new Select(element);
 		select.selectByVisibleText(itemValue);
 	}
+	
+	public void selectItemByIndexInDropdown(WebDriver driver, String locator, int itemValue) {
+		element = getElement(driver, locator);
+		select = new Select(element);
+		select.selectByIndex(itemValue);
+	}
 
 	public int getAllElementInLocator(WebDriver driver, String locator) {
 		elements = getElements(driver, locator);
@@ -199,6 +206,7 @@ public class AbstractPage {
 	public void selectItemInCustomDropdown(WebDriver driver, String parentLocator, String childItemLocator, String expectedItem) {
 		element = getElement(driver, parentLocator);
 		element.click();
+		sleepInSecond(5);
 		explicitWait = new WebDriverWait(driver, 20);
 		explicitWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(getByXpath(childItemLocator)));
 		elements = getElements(driver, childItemLocator);
@@ -206,7 +214,6 @@ public class AbstractPage {
 			if (item.getText().equals(expectedItem)) {
 				jsExecutor = (JavascriptExecutor) driver;
 				jsExecutor.executeScript("arguments[0].scrollIntoView(true);", item);
-				sleepInSecond(1);
 				item.click();
 				sleepInSecond(1);
 				break;
@@ -731,6 +738,7 @@ public class AbstractPage {
 			clickToElement(driver, AbstractPageUI.DYNAMIC_LINK_LIST_MY_ACCOUNT, linkName);
 		}
 		
+		@Step("Get text to verify data in textbox ")
 		public String getTextErrorMessageByID(WebDriver driver, String values) {
 			waitToElementVisible(driver, AbstractPageUI.DYNAMIC_ERROR_MESSAGE_TEXT, values);
 			return getElementText(driver, AbstractPageUI.DYNAMIC_ERROR_MESSAGE_TEXT, values);

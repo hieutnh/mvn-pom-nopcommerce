@@ -31,7 +31,7 @@ import pageOjects.stockSubscriptionsObject;
 import reportConfigAllure.AllureTestListener;
 
 @Listeners({AllureTestListener.class})
-public class Level_09_Search extends AbstractTest {
+public class Level_10_Admin extends AbstractTest {
 	WebDriver driver;
 	Select select;
 	String email, pass, firstname, lastname, reEmail;

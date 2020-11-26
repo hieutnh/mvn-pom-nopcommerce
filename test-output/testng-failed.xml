@@ -3,11 +3,10 @@
 <suite name="Failed suite [Suite]" parallel="tests">
   <parameter name="url" value="https://demo.nopcommerce.com/"/>
   <listeners>
-    <listener class-name="reportConfig.TestListeners"/>
     <listener class-name="commons.MethodListener"/>
   </listeners>
-  <test thread-count="5" name="Run on Chrome UI(failed)" parallel="tests">
-    <parameter name="Browser" value="chrome_ui"/>
+  <test thread-count="5" name="Run on Firefox UI(failed)" parallel="tests">
+    <parameter name="Browser" value="firefox_ui"/>
     <classes>
       <class name="com.nopcommerce.common.Common_01_Register">
         <methods>
@@ -16,5 +15,5 @@
         </methods>
       </class> <!-- com.nopcommerce.common.Common_01_Register -->
     </classes>
-  </test> <!-- Run on Chrome UI(failed) -->
+  </test> <!-- Run on Firefox UI(failed) -->
 </suite> <!-- Failed suite [Suite] -->

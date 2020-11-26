@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <parameter name="url" value="param-val-not-found"/>
-  <parameter name="Browser" value="param-val-not-found"/>
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.nopcommerce.common.Common_01_Register">
+      <class name="com.nopcommerce.users.Level_09_Search2">
         <methods>
-          <include name="TC_04_Register_Succes"/>
-          <include name="TC_02_Register_Wrong_Email"/>
-          <include name="TC_03_Register_Pass_At_Least_6"/>
-          <include name="TC_01_Register_Empty_Data"/>
+          <include name="TC_01_JQUERY"/>
           <include name="beforeClass"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- com.nopcommerce.common.Common_01_Register -->
+      </class> <!-- com.nopcommerce.users.Level_09_Search2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

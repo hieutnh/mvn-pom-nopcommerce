@@ -1,18 +1,26 @@
 package com.nopcommerce.common;
 
+import java.lang.reflect.Method;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 import commons.AbstractTest;
 import commons.DataHelper;
 import driverFactory.DriverManager;
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
 import pageOjects.PageGeneratorManager;
 import pageOjects.addressesPageObject;
 import pageOjects.customerInfoPageObject;
@@ -23,7 +31,10 @@ import pageOjects.ordersPageObject;
 import pageOjects.registerPageObject;
 import pageOjects.rewardPointsPageObject;
 import pageOjects.stockSubscriptionsObject;
+import reportConfigAllure.AllureTestListener;
+import reportConfigAllure.ExtentTestManager_2_Capture;
 
+@Listeners({AllureTestListener.class})
 public class Common_01_Register extends AbstractTest {
 	WebDriver driver;
 	DriverManager driverManager;
@@ -50,6 +61,9 @@ public class Common_01_Register extends AbstractTest {
 	}
 
 	@Test
+	@Description("Register a user to system and verify user register success")
+	@Story("Story 1 - Register with empty data")
+	@Severity(SeverityLevel.NORMAL)
 	public void TC_01_Register_Empty_Data() {
 		homePage = PageGeneratorManager.getHomePage(driver);
 		registerPage = homePage.clickToRegisterLink();
@@ -70,7 +84,9 @@ public class Common_01_Register extends AbstractTest {
 		verifyEquals(ConfirmPassword_error, "Password is required.");
 
 	}
-	
+	@Description("Register a user to system and verify user register success")
+	@Story("Story 2 - Register with wrong email")
+	@Severity(SeverityLevel.NORMAL)
 	@Test
 	public void TC_02_Register_Wrong_Email() {
 		registerPage.clickToGenderRadioButton();
@@ -95,20 +111,23 @@ public class Common_01_Register extends AbstractTest {
 		String ConfirmPassword_error = registerPage.getTextErrorMessageByID(driver, "Email-error");
 		verifyEquals(ConfirmPassword_error, "Wrong email");
 	}
-
+	@Story("Story 3 - Register with pass at least 6")
+	@Severity(SeverityLevel.NORMAL)
 	@Test
 	public void TC_03_Register_Pass_At_Least_6() {
 		registerPage.inputEmailToTextBox(email);
-		
 		registerPage.inputPassToTextBox("1");
 		registerPage.inputConfirmPassToTextBox("1");
 		registerPage.clickRegisterButton();
 		String Password_At_Least_6 = registerPage.errorMessageLeast6();
-		verifyEquals(Password_At_Least_6, "Password must meet the following rules:\n" + "must have at least 6 character");
+		Assert.assertEquals(Password_At_Least_6, "Password must meet the following rules:\n" + "must have at least 6 characters");
 		
 	}
+	
+	@Story("Story 4 - Register Success")
+	@Severity(SeverityLevel.NORMAL)
 	@Test
-	public void TC_04_Register_Succes() {
+	public void TC_04_Register_Success() {
 		registerPage.inputToFirstName(firstname);
 
 		registerPage.inputToLastName(lastname);

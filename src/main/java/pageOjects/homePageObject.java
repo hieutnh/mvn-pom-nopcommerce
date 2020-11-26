@@ -3,6 +3,7 @@ package pageOjects;
 import org.openqa.selenium.WebDriver;
 
 import commons.AbstractPage;
+import io.qameta.allure.Step;
 import pageUIs.HomePageUI;
 
 public class homePageObject extends AbstractPage {
@@ -13,6 +14,7 @@ public class homePageObject extends AbstractPage {
 		this.driver = driver;
 	}
 
+	@Step("Click to home page")
 	public registerPageObject clickToRegisterLink() {
 		waitToElementClickAble(driver, HomePageUI.REGISTER_LINK);
 		clickToElement(driver, HomePageUI.REGISTER_LINK);
@@ -37,6 +39,7 @@ public class homePageObject extends AbstractPage {
 		return PageGeneratorManager.getCustomerInfoPage(driver);
 	}
 
+	@Step("Click search footer link")
 	public searchFooterPageObject clickSearchFooter() {
 		waitToElementClickAble(driver, HomePageUI.SEARCH_FOOTER_LINK);
 		clickToElement(driver, HomePageUI.SEARCH_FOOTER_LINK);

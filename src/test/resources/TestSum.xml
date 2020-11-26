@@ -2,7 +2,8 @@
 <suite name="Suite" parallel="tests" thread-cound="2">
 	<parameter name="url" value="https://demo.nopcommerce.com/" />
 	<listeners>
-		<listener class-name="reportConfigAllure.AllureTestListener" />
+		<!-- <listener class-name="reportConfig.TestListeners" /> -->
+		<!-- <listener class-name="reportConfig1.ExtentTestListener_2_Capture" /> -->
 		<listener class-name="commons.MethodListener" />
 	</listeners>
 
@@ -18,8 +19,8 @@
 	<test name="Run on Firefox UI">
 		<parameter name="Browser" value="firefox_ui" />
 		<classes>
+<!-- 			<class name="com.nopcommerce.users.TestSum" /> -->
 			<class name="com.nopcommerce.common.Common_01_Register" />
-			<class name="com.nopcommerce.users.Level_09_Search" />
 		</classes>
 	</test>
 

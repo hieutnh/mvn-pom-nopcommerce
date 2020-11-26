@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Run on Chrome UI</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>8/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Nov 24 18:24:38 ICT 2020</td>
+<td>Started on:</td><td>Wed Nov 25 11:53:07 ICT 2020</td>
 </tr>
-<tr><td>Total time:</td><td>22 seconds (22798 ms)</td>
+<tr><td>Total time:</td><td>128 seconds (128885 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,11 +76,11 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.nopcommerce.common.Common_01_Register.TC_03_Register_Pass_At_Least_6()'><b>TC_03_Register_Pass_At_Least_6</b><br>Test class: com.nopcommerce.common.Common_01_Register<br/>
-<a href="#Output-1948139989" onClick='toggleBox("Output-1948139989", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-370594718" onClick='toggleBox("Output-370594718", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1948139989" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1948139989">
-2020-11-24 18:24:53,250 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- FAILED -------------------------- 
+<a href="#Output-370594718" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-370594718">
+2020-11-25 11:53:22,347 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- FAILED -------------------------- 
 <br/>
 </div>
 </td>
@@ -94,8 +94,8 @@ must have at least 6 characters]
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1948139989", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1948139989'><pre>java.lang.AssertionError: expected [Password must meet the following rules:
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace370594718", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace370594718'><pre>java.lang.AssertionError: expected [Password must meet the following rules:
 must have at least 6 character] but found [Password must meet the following rules:
 must have at least 6 characters]
 	at org.testng.Assert.fail(Assert.java:96)
@@ -128,7 +128,135 @@ must have at least 6 characters]
 	at java.lang.Thread.run(Thread.java:748)
 </pre></div></td>
 <td>1</td>
-<td>com.nopcommerce.common.Common_01_Register@62bd765</td></tr>
+<td>com.nopcommerce.common.Common_01_Register@551bdc27</td></tr>
+<tr>
+<td title='com.nopcommerce.users.Level_09_Search.TC_05_Advance_Search_With_Parent_Categories()'><b>TC_05_Advance_Search_With_Parent_Categories</b><br>Test class: com.nopcommerce.users.Level_09_Search<br/>
+<a href="#Output-1274682059" onClick='toggleBox("Output-1274682059", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1274682059" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1274682059">
+2020-11-25 11:53:49,210 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 01:Input item not exits
+<br/>
+2020-11-25 11:53:49,808 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 02:click checkbox advance search
+<br/>
+2020-11-25 11:53:49,874 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 03:click dropdown sellect computers
+<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate element with text: Computer
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:25:02.294Z&apos;
+System info: host: &apos;DESKTOP-ACFHNHV&apos;, ip: &apos;192.168.1.90&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)
+	at commons.AbstractPage.selectItemInDropdown(AbstractPage.java:172)
+	at pageOjects.searchFooterPageObject.clickDropdownCategory(searchFooterPageObject.java:49)
+	at com.nopcommerce.users.Level_09_Search.TC_05_Advance_Search_With_Parent_Categories(Level_09_Search.java:88)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1274682059", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1274682059'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate element with text: Computer
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:25:02.294Z&apos;
+System info: host: &apos;DESKTOP-ACFHNHV&apos;, ip: &apos;192.168.1.90&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)
+	at commons.AbstractPage.selectItemInDropdown(AbstractPage.java:172)
+	at pageOjects.searchFooterPageObject.clickDropdownCategory(searchFooterPageObject.java:49)
+	at com.nopcommerce.users.Level_09_Search.TC_05_Advance_Search_With_Parent_Categories(Level_09_Search.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>10</td>
+<td>com.nopcommerce.users.Level_09_Search@58fdd99</td></tr>
+<tr>
+<td title='com.nopcommerce.users.Level_09_Search.TC_07_Advance_Search_With_Incorrect_Manufacturer()'><b>TC_07_Advance_Search_With_Incorrect_Manufacturer</b><br>Test class: com.nopcommerce.users.Level_09_Search</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class=&apos;no-result&apos;] (tried for 30 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at commons.AbstractPage.waitToElementVisible(AbstractPage.java:537)
+	at pageOjects.searchFooterPageObject.clickDropdowManufacturer(searchFooterPageObject.java:63)
+	at com.nopcommerce.users.Level_09_Search.TC_07_Advance_Search_With_Incorrect_Manufacturer(Level_09_Search.java:107)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //div[@class=&apos;no-result&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:25:02.294Z&apos;
+System info: host: &apos;DESKTOP-ACFHNHV&apos;, ip: &apos;192.168.1.90&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 23 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1690294303", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1690294303'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class=&apos;no-result&apos;] (tried for 30 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at commons.AbstractPage.waitToElementVisible(AbstractPage.java:537)
+	at pageOjects.searchFooterPageObject.clickDropdowManufacturer(searchFooterPageObject.java:63)
+	at com.nopcommerce.users.Level_09_Search.TC_07_Advance_Search_With_Incorrect_Manufacturer(Level_09_Search.java:107)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //div[@class=&apos;no-result&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:25:02.294Z&apos;
+System info: host: &apos;DESKTOP-ACFHNHV&apos;, ip: &apos;192.168.1.90&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 23 more
+</pre></div></td>
+<td>31</td>
+<td>com.nopcommerce.users.Level_09_Search@58fdd99</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -139,53 +267,86 @@ must have at least 6 characters]
 </tr>
 <tr>
 <td title='com.nopcommerce.common.Common_01_Register.TC_01_Register_Empty_Data()'><b>TC_01_Register_Empty_Data</b><br>Test class: com.nopcommerce.common.Common_01_Register<br/>
-<a href="#Output-1350246090" onClick='toggleBox("Output-1350246090", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1508242530" onClick='toggleBox("Output-1508242530", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1350246090" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1350246090">
-2020-11-24 18:24:47,467 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+<a href="#Output-1508242530" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1508242530">
+2020-11-25 11:53:16,623 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
 <br/>
-2020-11-24 18:24:47,509 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+2020-11-25 11:53:16,665 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
 <br/>
-2020-11-24 18:24:47,551 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+2020-11-25 11:53:16,709 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
 <br/>
-2020-11-24 18:24:47,591 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+2020-11-25 11:53:16,750 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
 <br/>
-2020-11-24 18:24:47,629 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+2020-11-25 11:53:16,792 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
 <br/>
 </div>
 </td>
 <td></td>
 <td>1</td>
-<td>com.nopcommerce.common.Common_01_Register@62bd765</td></tr>
+<td>com.nopcommerce.common.Common_01_Register@551bdc27</td></tr>
+<tr>
+<td title='com.nopcommerce.users.Level_09_Search.TC_01_Search_With_Empty_Data()'><b>TC_01_Search_With_Empty_Data</b><br>Test class: com.nopcommerce.users.Level_09_Search</td>
+<td></td>
+<td>1</td>
+<td>com.nopcommerce.users.Level_09_Search@58fdd99</td></tr>
 <tr>
 <td title='com.nopcommerce.common.Common_01_Register.TC_02_Register_Wrong_Email()'><b>TC_02_Register_Wrong_Email</b><br>Test class: com.nopcommerce.common.Common_01_Register<br/>
-<a href="#Output-281805276" onClick='toggleBox("Output-281805276", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1633781209" onClick='toggleBox("Output-1633781209", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-281805276" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-281805276">
-2020-11-24 18:24:51,280 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+<a href="#Output-1633781209" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1633781209">
+2020-11-25 11:53:20,384 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
 <br/>
 </div>
 </td>
 <td></td>
 <td>3</td>
-<td>com.nopcommerce.common.Common_01_Register@62bd765</td></tr>
+<td>com.nopcommerce.common.Common_01_Register@551bdc27</td></tr>
+<tr>
+<td title='com.nopcommerce.users.Level_09_Search.TC_02_Search_With_Data_Not_Exist()'><b>TC_02_Search_With_Data_Not_Exist</b><br>Test class: com.nopcommerce.users.Level_09_Search</td>
+<td></td>
+<td>1</td>
+<td>com.nopcommerce.users.Level_09_Search@58fdd99</td></tr>
+<tr>
+<td title='com.nopcommerce.users.Level_09_Search.TC_03_Search_With_Data_Exist()'><b>TC_03_Search_With_Data_Exist</b><br>Test class: com.nopcommerce.users.Level_09_Search</td>
+<td></td>
+<td>1</td>
+<td>com.nopcommerce.users.Level_09_Search@58fdd99</td></tr>
 <tr>
 <td title='com.nopcommerce.common.Common_01_Register.TC_04_Register_Succes()'><b>TC_04_Register_Succes</b><br>Test class: com.nopcommerce.common.Common_01_Register<br/>
-<a href="#Output-621133317" onClick='toggleBox("Output-621133317", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1360389723" onClick='toggleBox("Output-1360389723", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-621133317" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-621133317">
-2020-11-24 18:25:00,280 INFO  com.nopcommerce.common.Common_01_Register - OS name = windows 10
+<a href="#Output-1360389723" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1360389723">
+2020-11-25 11:53:30,989 INFO  com.nopcommerce.common.Common_01_Register - OS name = windows 10
 <br/>
-2020-11-24 18:25:00,927 INFO  com.nopcommerce.common.Common_01_Register - ---------- QUIT BROWSER SUCCESS ----------
+2020-11-25 11:53:31,640 INFO  com.nopcommerce.common.Common_01_Register - ---------- QUIT BROWSER SUCCESS ----------
 <br/>
 </div>
 </td>
 <td></td>
-<td>7</td>
-<td>com.nopcommerce.common.Common_01_Register@62bd765</td></tr>
+<td>8</td>
+<td>com.nopcommerce.common.Common_01_Register@551bdc27</td></tr>
+<tr>
+<td title='com.nopcommerce.users.Level_09_Search.TC_04_Search_With_Product_Name()'><b>TC_04_Search_With_Product_Name</b><br>Test class: com.nopcommerce.users.Level_09_Search</td>
+<td></td>
+<td>1</td>
+<td>com.nopcommerce.users.Level_09_Search@58fdd99</td></tr>
+<tr>
+<td title='com.nopcommerce.users.Level_09_Search.TC_06_Advance_Search_With_Sub_Categories()'><b>TC_06_Advance_Search_With_Sub_Categories</b><br>Test class: com.nopcommerce.users.Level_09_Search<br/>
+<a href="#Output-2007849466" onClick='toggleBox("Output-2007849466", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2007849466" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2007849466">
+2020-11-25 11:54:03,138 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Sub_Categories - Step 05:click search button
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.nopcommerce.users.Level_09_Search@58fdd99</td></tr>
 </table><p>
 </body>
 </html>
