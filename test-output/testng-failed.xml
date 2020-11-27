@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" parallel="tests">
-  <parameter name="url" value="https://demo.nopcommerce.com/"/>
+  <parameter name="url" value="https://admin-demo.nopcommerce.com/admin/"/>
   <listeners>
+    <listener class-name="reportConfigAllure.AllureTestListener"/>
     <listener class-name="commons.MethodListener"/>
   </listeners>
-  <test thread-count="5" name="Run on Firefox UI(failed)" parallel="tests">
-    <parameter name="Browser" value="firefox_ui"/>
+  <test thread-count="5" name="Run on chrome UI(failed)" parallel="tests">
+    <parameter name="Browser" value="chrome_ui"/>
     <classes>
-      <class name="com.nopcommerce.common.Common_01_Register">
+      <class name="com.nopcommerce.users.Level_10_Admin">
         <methods>
-          <include name="TC_03_Register_Pass_At_Least_6"/>
+          <include name="TC_04_Search_With_Product_Name_And_Parent_Category_checked"/>
+          <include name="TC_07_Go_Directly_To_Product_SKU"/>
           <include name="beforeClass"/>
+          <include name="TC_02_Search_With_Product_Name"/>
+          <include name="TC_03_Search_With_Product_Name_And_Parent_Category_Unchecked"/>
+          <include name="TC_05_Search_With_Product_Name_And_Child_Category"/>
+          <include name="TC_06_Search_With_Product_Name_Manufacturer"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- com.nopcommerce.common.Common_01_Register -->
+      </class> <!-- com.nopcommerce.users.Level_10_Admin -->
     </classes>
-  </test> <!-- Run on Firefox UI(failed) -->
+  </test> <!-- Run on chrome UI(failed) -->
 </suite> <!-- Failed suite [Suite] -->

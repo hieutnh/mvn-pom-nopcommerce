@@ -1,4 +1,4 @@
-package pageUIs;
+package pageUIsUser;
 
 public class RegisterPageUI {
 	public static final String GENDER_RADIO_BUTTON = "//input[@id='gender-male']";

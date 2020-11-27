@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <suite name="Suite" parallel="tests" thread-cound="2">
-	<parameter name="url" value="https://demo.nopcommerce.com/" />
+	<parameter name="url" value="https://admin-demo.nopcommerce.com/admin/" />
 	<listeners>
 		<listener class-name="reportConfigAllure.AllureTestListener" />
 		<listener class-name="commons.MethodListener" />
@@ -15,12 +15,18 @@
 	<!-- </classes> -->
 	<!-- </test> -->
 
-	<test name="Run on Firefox UI">
-		<parameter name="Browser" value="firefox_ui" />
+	<test name="Run on chrome UI">
+		<parameter name="Browser" value="chrome_ui" />
 		<classes>
-			<class name="com.nopcommerce.common.Common_01_Register" />
-			<class name="com.nopcommerce.users.Level_09_Search" />
+			<class name="com.nopcommerce.users.Level_10_Admin" />
 		</classes>
 	</test>
+
+	<!-- <test name="Run on Firefox UI"> -->
+	<!-- <parameter name="Browser" value="firefox_ui" /> -->
+	<!-- <classes> -->
+	<!-- <class name="com.nopcommerce.users.Level_10_Admin" /> -->
+	<!-- </classes> -->
+	<!-- </test> -->
 
 </suite>

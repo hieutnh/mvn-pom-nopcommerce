@@ -1,9 +1,9 @@
-package pageOjects;
+package pageOjectsUser;
 
 import org.openqa.selenium.WebDriver;
 
 import commons.AbstractPage;
-import pageUIs.CustomerInfoPageUI;
+import pageUIsUser.CustomerInfoPageUI;
 
 public class customerInfoPageObject extends AbstractPage {
 	WebDriver driver;

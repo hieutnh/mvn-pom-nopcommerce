@@ -1,10 +1,10 @@
-package pageOjects;
+package pageOjectsUser;
 
 import org.openqa.selenium.WebDriver;
 
 import commons.AbstractPage;
 import io.qameta.allure.Step;
-import pageUIs.HomePageUI;
+import pageUIsUser.HomePageUI;
 
 public class homePageObject extends AbstractPage {
 	WebDriver driver;

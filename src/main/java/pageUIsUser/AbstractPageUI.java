@@ -1,4 +1,4 @@
-package pageUIs;
+package pageUIsUser;
 
 public class AbstractPageUI {
 	//Nhiều locator để chuyển page (cách 1)

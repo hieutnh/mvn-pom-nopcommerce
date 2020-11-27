@@ -195,12 +195,12 @@
 					<suiteXmlFiles>
 					
 						<!-- run 1 file xml -->
-						<!-- <file>src/test/resources/runNopcommerceTestcase.xml</file> -->
+						<file>src/test/resources/runNopcommerceAdmin.xml</file>
 						
 						
 						<!-- run nhiều file xml -->
-						<suiteXmlFile>src/test/resources/runNopcommerceTestcase.xml</suiteXmlFile>
-						<suiteXmlFile>src/test/resources/runNopcommerceAdmin</suiteXmlFile>
+<!-- 						<suiteXmlFile>src/test/resources/runNopcommerceTestcase.xml</suiteXmlFile> -->
+<!-- 						<suiteXmlFile>src/test/resources/runNopcommerceAdmin</suiteXmlFile> -->
 					</suiteXmlFiles>
 					<testFailureIgnore>true</testFailureIgnore>
 				</configuration>

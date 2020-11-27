@@ -1,4 +1,4 @@
-package pageUIs;
+package pageUIsUser;
 
 public class searchFooterPageUI {
 	public static final String SEARCH_KEYWORD_BUTTON = "//div[@class='buttons']//input[@type='submit']";

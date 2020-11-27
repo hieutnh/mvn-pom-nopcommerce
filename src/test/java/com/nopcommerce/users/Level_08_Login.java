@@ -11,16 +11,16 @@ import org.testng.annotations.Test;
 import com.nopcommerce.common.Common_01_Register;
 
 import commons.AbstractTest;
-import pageOjects.PageGeneratorManager;
-import pageOjects.addressesPageObject;
-import pageOjects.customerInfoPageObject;
-import pageOjects.homePageObject;
-import pageOjects.loginPageObject;
-import pageOjects.myProductReviewsPageObject;
-import pageOjects.ordersPageObject;
-import pageOjects.registerPageObject;
-import pageOjects.rewardPointsPageObject;
-import pageOjects.stockSubscriptionsObject;
+import pageOjectsUser.PageGeneratorManager;
+import pageOjectsUser.addressesPageObject;
+import pageOjectsUser.customerInfoPageObject;
+import pageOjectsUser.homePageObject;
+import pageOjectsUser.loginPageObject;
+import pageOjectsUser.myProductReviewsPageObject;
+import pageOjectsUser.ordersPageObject;
+import pageOjectsUser.registerPageObject;
+import pageOjectsUser.rewardPointsPageObject;
+import pageOjectsUser.stockSubscriptionsObject;
 
 public class Level_08_Login extends AbstractTest {
 	WebDriver driver;

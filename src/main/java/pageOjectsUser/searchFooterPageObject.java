@@ -1,11 +1,11 @@
-package pageOjects;
+package pageOjectsUser;
 
 import org.openqa.selenium.WebDriver;
 
 import commons.AbstractPage;
 import io.qameta.allure.Step;
-import pageUIs.RegisterPageUI;
-import pageUIs.searchFooterPageUI;
+import pageUIsUser.RegisterPageUI;
+import pageUIsUser.searchFooterPageUI;
 
 public class searchFooterPageObject extends AbstractPage {
 	public searchFooterPageObject(WebDriver driver) {

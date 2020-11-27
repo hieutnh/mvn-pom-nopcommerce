@@ -1,4 +1,4 @@
-package pageUIs;
+package pageUIsUser;
 
 public class ChangePasswordPageUI {
 

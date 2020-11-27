@@ -567,3 +567,8 @@
 2020-11-26 18:02:36,509 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
 2020-11-26 18:02:39,773 INFO  com.nopcommerce.common.Common_01_Register - OS name = windows 10
 2020-11-26 18:02:40,816 INFO  com.nopcommerce.common.Common_01_Register - ---------- QUIT BROWSER SUCCESS ----------
+2020-11-27 10:30:02,797 INFO  com.nopcommerce.users.Level_10_Admin -  -------------------------- FAILED -------------------------- 
+2020-11-27 10:30:38,476 INFO  com.nopcommerce.users.Level_10_Admin -  -------------------------- FAILED -------------------------- 
+2020-11-27 10:40:53,552 INFO  com.nopcommerce.users.Level_10_Admin -  -------------------------- PASSED -------------------------- 
+2020-11-27 10:41:26,913 INFO  com.nopcommerce.users.Level_10_Admin -  -------------------------- FAILED -------------------------- 
+2020-11-27 10:43:24,886 INFO  com.nopcommerce.users.Level_10_Admin -  -------------------------- PASSED -------------------------- 

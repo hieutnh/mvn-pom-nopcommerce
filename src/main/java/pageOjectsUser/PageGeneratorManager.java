@@ -1,4 +1,4 @@
-package pageOjects;
+package pageOjectsUser;
 
 import org.openqa.selenium.WebDriver;
 

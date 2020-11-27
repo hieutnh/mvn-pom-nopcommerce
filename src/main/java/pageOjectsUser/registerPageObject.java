@@ -1,11 +1,11 @@
-package pageOjects;
+package pageOjectsUser;
 
 import org.openqa.selenium.WebDriver;
 
 import commons.AbstractPage;
 import commons.AbstractTest;
 import io.qameta.allure.Step;
-import pageUIs.RegisterPageUI;
+import pageUIsUser.RegisterPageUI;
 
 public class registerPageObject extends AbstractPage {
 	public registerPageObject(WebDriver driver) {

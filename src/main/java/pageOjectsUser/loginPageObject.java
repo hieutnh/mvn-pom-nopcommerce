@@ -1,9 +1,9 @@
-package pageOjects;
+package pageOjectsUser;
 
 import org.openqa.selenium.WebDriver;
 
 import commons.AbstractPage;
-import pageUIs.LoginPageUI;
+import pageUIsUser.LoginPageUI;
 
 public class loginPageObject extends AbstractPage {
 	WebDriver driver;

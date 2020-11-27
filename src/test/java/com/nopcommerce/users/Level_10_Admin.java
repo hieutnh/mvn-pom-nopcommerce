@@ -9,28 +9,19 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import com.nopcommerce.common.Common_01_Register;
-
 import commons.AbstractTest;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
-import pageOjects.PageGeneratorManager;
-import pageOjects.addressesPageObject;
-import pageOjects.changePasswordPageObject;
-import pageOjects.customerInfoPageObject;
-import pageOjects.homePageObject;
-import pageOjects.loginPageObject;
-import pageOjects.myProductReviewsPageObject;
-import pageOjects.ordersPageObject;
-import pageOjects.registerPageObject;
-import pageOjects.rewardPointsPageObject;
-import pageOjects.searchFooterPageObject;
-import pageOjects.stockSubscriptionsObject;
+import pageOjectsAdmin.PageGeneratorManagerAdmin;
+import pageOjectsAdmin.homePageObjectAdmin;
+import pageOjectsAdmin.loginPageObjectAdmin;
+import pageOjectsAdmin.productInfoPageOjectAdmin;
+import pageOjectsAdmin.productPageOjectAdmin;
 import reportConfigAllure.AllureTestListener;
 
-@Listeners({AllureTestListener.class})
+@Listeners({ AllureTestListener.class })
 public class Level_10_Admin extends AbstractTest {
 	WebDriver driver;
 	Select select;
@@ -42,124 +33,87 @@ public class Level_10_Admin extends AbstractTest {
 	public void beforeClass(String BrowserName, String appUrl) {
 		driver = getBrowserDriver(BrowserName, appUrl);
 
-		homePage = PageGeneratorManager.getHomePage(driver);
+	}
 
-		loginPage = homePage.clickToLoginLinkHeader();
-
-		loginPage.inputToEmailTextBox(Common_01_Register.email);
-		loginPage.inputToPasswordTextBox(Common_01_Register.pass);
+	@Test
+	@Description("Search data in database")
+	@Story("Story 1 - Input user name and password success")
+	@Severity(SeverityLevel.NORMAL)
+	public void TC_01_Login_success() {
+		loginPage = PageGeneratorManagerAdmin.getLoginPage(driver);
+		loginPage.inputToEmailTextBox("admin@yourstore.com");
+		loginPage.inputToPasswordTextBox("admin");
 		homePage = loginPage.clicktoLoginButton();
-
 	}
 
 	@Test
-	@Description("Search and Advanced search")
-	@Story("Story 1 - Search with empty data")
+	@Description("Search data in database")
+	@Story("Story 2 - Search with product name")
 	@Severity(SeverityLevel.NORMAL)
-	public void TC_01_Search_With_Empty_Data() {
-		searchFooterPage = homePage.clickSearchFooter();
-		searchFooterPage.clickToSearchButtonKeyword();
-		Assert.assertEquals(searchFooterPage.getTextErrorMessageEmptySearch(), "Search term minimum length is 3 characters");
-
+	public void TC_02_Search_With_Product_Name() {
+		homePage.clickToCatalog(driver, "fa fa-book");
+		homePage.clickToProductLink(driver, "Products");
+		productPage = PageGeneratorManagerAdmin.getProductPage(driver);
+		productPage.inputTextBoxByID("Lenovo IdeaCentre 600 All-in-One PC", "SearchProductName");
+		productPage.clickButtonByID(driver, "search-products");
+		Assert.assertEquals(productPage.isDisplayLenovoProduct(), 1);
 	}
 
-	@Story("Story 2 - Search with data not exist")
-	@Severity(SeverityLevel.NORMAL)
 	@Test
-	public void TC_02_Search_With_Data_Not_Exist() {
-		searchFooterPage.inputItemNotExist("macbook 2050");
-		searchFooterPage.clickToSearchButtonKeyword();
-		Assert.assertEquals(searchFooterPage.getTextErrorMessageEmptySearch(), "No products were found that matched your criteria.");
-
+	@Description("Search data in database")
+	@Story("Story 3 - Search with product name,parent category unchecked")
+	@Severity(SeverityLevel.NORMAL)
+	public void TC_03_Search_With_Product_Name_And_Parent_Category_Unchecked() {
+		productPage.clickDropdownCategory(1, "SearchCategoryId");
+		productPage.clickSubCategoriesUncheck();
+		productPage.clickButtonByID(driver, "search-products");
+		Assert.assertEquals(productPage.getTextErrorMessageNoData(), "No data available in table");
 	}
 
-	@Story("Story 3 - Search with data exist")
-	@Severity(SeverityLevel.NORMAL)
 	@Test
-	public void TC_03_Search_With_Data_Exist() {
-		searchFooterPage.inputItemNotExist("Lenovo");
-		searchFooterPage.clickToSearchButtonKeyword();
-		verifyEquals(searchFooterPage.getSizeItemDisplayed(), 2);
+	@Description("Search data in database")
+	@Story("Story 4 - Search with product name,parent category checked")
+	@Severity(SeverityLevel.NORMAL)
+	public void TC_04_Search_With_Product_Name_And_Parent_Category_checked() {
+		productPage.clickSubCategoriesCheck();
+		productPage.clickButtonByID(driver, "search-products");
+		Assert.assertEquals(productPage.isDisplayLenovoProduct(), 1);
 	}
 
-	@Story("Story 4 - Search with product name")
-	@Severity(SeverityLevel.NORMAL)
 	@Test
-	public void TC_04_Search_With_Product_Name() {
-		searchFooterPage.inputItemNotExist("ThinkPad X1 Carbon");
-		searchFooterPage.clickToSearchButtonKeyword();
-		Assert.assertEquals(searchFooterPage.getSizeItemDisplayed(), 1);
-		Assert.assertEquals(searchFooterPage.getTextItem(), "Lenovo Thinkpad X1 Carbon Laptop");
-
+	@Description("Search data in database")
+	@Story("Story 5 - Search with product name child category")
+	@Severity(SeverityLevel.NORMAL)
+	public void TC_05_Search_With_Product_Name_And_Child_Category() {
+		productPage.clickDropdownCategory(2, "SearchCategoryId");
+		productPage.clickSubCategoriesUncheck();
+		productPage.clickButtonByID(driver, "search-products");
+		Assert.assertEquals(productPage.isDisplayLenovoProduct(), 1);
 	}
 
-	@Story("Story 5 - Advanced search with parent categories")
-	@Severity(SeverityLevel.NORMAL)
 	@Test
-	public void TC_05_Advance_Search_With_Parent_Categories() {
-		log.info("Advance_Search_With_Parent_Categories - Step 01:Input item not exits");
-		searchFooterPage.inputItemNotExist("Apple Macbook Pro");
-		log.info("Advance_Search_With_Parent_Categories - Step 02:click checkbox advance search");
-		searchFooterPage.clickAdvanceSearch();
-		log.info("Advance_Search_With_Parent_Categories - Step 03:click dropdown sellect computers");
-		searchFooterPage.clickDropdownCategory(1);
-		log.info("Advance_Search_With_Parent_Categories - Step 04:click search button");
-		searchFooterPage.clickToSearchButtonKeyword();
-		log.info("Advance_Search_With_Parent_Categories - Step 05:Verify error message not found item");
-		Assert.assertEquals(searchFooterPage.isErrorMessageNotFound(), "No products were found that matched your criteria.");
-
+	@Description("Search data in database")
+	@Story("Story 6 - Search with product name manufacturer")
+	@Severity(SeverityLevel.NORMAL)
+	public void TC_06_Search_With_Product_Name_Manufacturer() {
+		productPage.clickDropdownCategory(0, "SearchCategoryId");
+		productPage.clickSubCategoriesUncheck();
+		productPage.clickManufacturer(2, "SearchManufacturerId");
+		productPage.clickButtonByID(driver, "search-products");
+		Assert.assertEquals(productPage.getTextErrorMessageNoData(), "No data available in table");
 	}
 
-	@Story("Story 6 - Advanced search with sub categories")
-	@Severity(SeverityLevel.NORMAL)
 	@Test
-	public void TC_06_Advance_Search_With_Sub_Categories() throws InterruptedException {
-		searchFooterPage.clickAutomaticallySearchSubCategories();
-		log.info("Advance_Search_With_Sub_Categories - Step 05:click search button");
-		searchFooterPage.clickToSearchButtonKeyword();
-		Assert.assertEquals(searchFooterPage.getSizeItemDisplayed(), 1);
-		Assert.assertEquals(searchFooterPage.getTextItem(), "Apple MacBook Pro 13-inch");
-	}
+	@Description("Search data in database")
+	@Story("Story 7 - Go Directly to product SKU")
+	@Severity(SeverityLevel.NORMAL)
+	public void TC_07_Go_Directly_To_Product_SKU() {
+		productPage.inputTextBoxByID("LE_IC_600", "GoDirectlyToSku");
+		productPage.clickButtonByID(driver, "go-to-product-by-sku");
+		productInfoPage = PageGeneratorManagerAdmin.getProductInfoPage(driver);
+		Assert.assertTrue(productInfoPage.isDisplayProducInfo());
+		Assert.assertTrue(productInfoPage.isDisplayProductNameInfo());
 
-	@Story("Story 7 - Advanced search with incorrect manufacturer")
-	@Severity(SeverityLevel.NORMAL)
-	@Test
-	public void TC_07_Advance_Search_With_Incorrect_Manufacturer() {
-		searchFooterPage.clickDropdowManufacturer("HP");
-		searchFooterPage.clickToSearchButtonKeyword();
-		Assert.assertEquals(searchFooterPage.isErrorMessageNotFound(), "No products were found that matched your criteria.");
-		
-	}
-	
-	@Story("Story 8 - Advance Search With Price Range With Range")
-	@Severity(SeverityLevel.NORMAL)
-	@Test
-	public void TC_08_Advance_Search_With_Price_Range() {
-		searchFooterPage.clickDropdowManufacturer("Apple");
-		searchFooterPage.inputPriceFromTextbox("1000");
-		searchFooterPage.inputPriceToTextbox("2000");
-		searchFooterPage.clickToSearchButtonKeyword();
-		Assert.assertEquals(searchFooterPage.getSizeItemDisplayed(), 1);
-		Assert.assertEquals(searchFooterPage.getTextItem(), "Apple MacBook Pro 13-inch");
-	}
-	
-	@Story("Story 9 - Advance Search With Price_Range Less")
-	@Severity(SeverityLevel.NORMAL)
-	@Test
-	public void TC_09_Advance_Search_With_Price_Range_less() {
-		searchFooterPage.inputPriceToTextbox("1700");
-		searchFooterPage.clickToSearchButtonKeyword();
-		Assert.assertEquals(searchFooterPage.isErrorMessageNotFound(), "No products were found that matched your criteria.");
-	}
-	
-	@Story("Story 10 - Advance Search With Price_Range Greater Than Product Price")
-	@Severity(SeverityLevel.NORMAL)
-	@Test
-	public void TC_10_Advance_Search_With_Price_Range_Greater_Than_Product_Price() {
-		searchFooterPage.inputPriceFromTextbox("1900");
-		searchFooterPage.inputPriceToTextbox("5000");
-		searchFooterPage.clickToSearchButtonKeyword();
-		Assert.assertEquals(searchFooterPage.isErrorMessageNotFound(), "No products were found that matched your criteria.");
 	}
 
 	@AfterClass
@@ -167,16 +121,8 @@ public class Level_10_Admin extends AbstractTest {
 		driver.quit();
 	}
 
-	customerInfoPageObject customerInfoPage;
-	homePageObject homePage;
-	loginPageObject loginPage;
-	registerPageObject registerPage;
-	addressesPageObject addressPage;
-	ordersPageObject ordersPage;
-	myProductReviewsPageObject myProductPage;
-	rewardPointsPageObject rewardPointsPage;
-	stockSubscriptionsObject stockSubscriptionsPage;
-	changePasswordPageObject changePasswordPage;
-	searchFooterPageObject searchFooterPage;
-
+	homePageObjectAdmin homePage;
+	loginPageObjectAdmin loginPage;
+	productPageOjectAdmin productPage;
+	productInfoPageOjectAdmin productInfoPage;
 }
