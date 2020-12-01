@@ -19,8 +19,10 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import io.qameta.allure.Step;
+import net.bytebuddy.asm.Advice.Enter;
 import pageOjectsAdmin.PageGeneratorManagerAdmin;
 import pageOjectsAdmin.productPageOjectAdmin;
 import pageOjectsUser.PageGeneratorManager;
@@ -31,6 +33,8 @@ import pageOjectsUser.ordersPageObject;
 import pageOjectsUser.rewardPointsPageObject;
 import pageOjectsUser.stockSubscriptionsObject;
 import pageUIsAdmin.AbstractPageUIAdmin;
+import pageUIsAdmin.CustomerAddNewPageUIAdmin;
+import pageUIsAdmin.CustomerPageUIAdmin;
 import pageUIsAdmin.HomePageUIAdmin;
 import pageUIsAdmin.ProductPageUIAdmin;
 import pageUIsUser.AbstractPageUI;
@@ -139,15 +143,25 @@ public class AbstractPage {
 	}
 
 	public void clickToElement(WebDriver driver, String locator) {
-		if (driver.toString().toLowerCase().contains("edge")) {
+		if (driver.toString().toLowerCase().contains("firefox") || driver.toString().toLowerCase().contains("edge")) {
 			sleepInMiliSecond(500);
 		}
 		element = getElement(driver, locator);
 		element.click();
 	}
 
+	public void checkDisplayToClick(WebDriver driver, String locator) {
+		if (driver.toString().toLowerCase().contains("firefox") || driver.toString().toLowerCase().contains("edge")) {
+			sleepInMiliSecond(500);
+		}
+		element = getElement(driver, locator);
+		if (element.isDisplayed()) {
+		}
+		element.click();
+	}
+
 	public void clickToElement(WebDriver driver, String locator, String... values) {
-		if (driver.toString().toLowerCase().contains("edge")) {
+		if (driver.toString().toLowerCase().contains("firefox") || driver.toString().toLowerCase().contains("edge")) {
 			sleepInMiliSecond(500);
 		}
 		element = getElement(driver, getDynamicLocator(locator, values));
@@ -172,8 +186,22 @@ public class AbstractPage {
 		element.sendKeys(value);
 	}
 
+	public void sendKeyBoardEnterToElement(WebDriver driver, String locator) {
+		element = getElement(driver, locator);
+		if (driver.toString().toLowerCase().contains("chrome") || driver.toString().toLowerCase().contains("edge") || driver.toString().toLowerCase().contains("firefox")) {
+			sleepInMiliSecond(500);
+		}
+		element.sendKeys(Keys.ENTER);
+	}
+
 	public void selectItemInDropdown(WebDriver driver, String locator, String itemValue) {
 		element = getElement(driver, locator);
+		select = new Select(element);
+		select.selectByVisibleText(itemValue);
+	}
+
+	public void selectItemInDropdown(WebDriver driver, String locator, String itemValue, String... values) {
+		element = getElement(driver, getDynamicLocator(locator, values));
 		select = new Select(element);
 		select.selectByVisibleText(itemValue);
 	}
@@ -276,6 +304,11 @@ public class AbstractPage {
 		return element.getText();
 	}
 
+	public String getElementText1(WebDriver driver, String locator) {
+		element = getElement(driver, locator);
+		return element.getText().trim();
+	}
+
 	public String getElementText(WebDriver driver, String locator, String... values) {
 		element = getElement(driver, getDynamicLocator(locator, values));
 		return element.getText();
@@ -287,6 +320,11 @@ public class AbstractPage {
 
 	public int countElementSize(WebDriver driver, String locator, String... values) {
 		return getElements(driver, getDynamicLocator(locator, values)).size();
+	}
+
+	public boolean verifyCheckbox(WebDriver driver, String locator) {
+		element = getElement(driver, locator);
+		return element.isSelected();
 	}
 
 	public void checkToCheckbox(WebDriver driver, String locator) {
@@ -778,18 +816,48 @@ public class AbstractPage {
 
 	// Dynamic param admin
 	public void clickButtonByID(WebDriver driver, String values) {
-		waitToElementClickAble(driver, ProductPageUIAdmin.DYNAMIC_SEARCH_BUTTON, values);
-		clickToElement(driver, ProductPageUIAdmin.DYNAMIC_SEARCH_BUTTON, values);
+		waitToElementClickAble(driver, AbstractPageUIAdmin.DYNAMIC_SEARCH_BUTTON, values);
+		clickToElement(driver, AbstractPageUIAdmin.DYNAMIC_SEARCH_BUTTON, values);
 	}
 
-	public void clickToCatalog(WebDriver driver, String values) {
+	public void clickToMenuParent(WebDriver driver, String values) {
 		waitToElementClickAble(driver, AbstractPageUIAdmin.DYNAMIC_LIST_MENU_LINK_DASBOARD, values);
 		clickToElement(driver, AbstractPageUIAdmin.DYNAMIC_LIST_MENU_LINK_DASBOARD, values);
 	}
 
-	public void clickToProductLink(WebDriver driver, String values) {
-		waitToElementClickAble(driver, AbstractPageUIAdmin.DYNAMIC_LIST_MENU_CHILD_LINK_DASBOARD, values);
-		clickToElement(driver, AbstractPageUIAdmin.DYNAMIC_LIST_MENU_CHILD_LINK_DASBOARD, values);
+	public void clickToChildMenuCatalogtLink(WebDriver driver, String values) {
+		waitToElementClickAble(driver, AbstractPageUIAdmin.DYNAMIC_LIST_MENU_CATALOG_CHILD_LINK_DASBOARD, values);
+		clickToElement(driver, AbstractPageUIAdmin.DYNAMIC_LIST_MENU_CATALOG_CHILD_LINK_DASBOARD, values);
+	}
+
+	public void clickToChildMenuCustomersLink(WebDriver driver, String values) {
+		waitToElementClickAble(driver, AbstractPageUIAdmin.DYNAMIC_LIST_MENU_CUSTOMERS_CHILD_NOT_SELECTED_LINK_DASBOARD, values);
+		clickToElement(driver, AbstractPageUIAdmin.DYNAMIC_LIST_MENU_CUSTOMERS_CHILD_NOT_SELECTED_LINK_DASBOARD, values);
+	}
+
+	public void clickToChildMenuCustomersSelectedLink(WebDriver driver, String values) {
+		waitToElementClickAble(driver, AbstractPageUIAdmin.DYNAMIC_LIST_MENU_CUSTOMERS_CHILD_SELECTED_LINK_DASBOARD, values);
+		clickToElement(driver, AbstractPageUIAdmin.DYNAMIC_LIST_MENU_CUSTOMERS_CHILD_SELECTED_LINK_DASBOARD, values);
+	}
+
+	public void InputTextBoxAdminByID(WebDriver driver, String value, String values) {
+		waitToElementVisible(driver, AbstractPageUIAdmin.DYNAMIC_TEXTBOX_ADMIN, values);
+		sendkeyToElement(driver, AbstractPageUIAdmin.DYNAMIC_TEXTBOX_ADMIN, value, values);
+	}
+
+	public String getAtributeAddSuccess(WebDriver driver, String attributeName, String values) {
+		waitToElementVisible(driver, AbstractPageUIAdmin.DYNAMIC_TEXTBOX_ADMIN, values);
+		return getElementAttribute(driver, AbstractPageUIAdmin.DYNAMIC_TEXTBOX_ADMIN, attributeName, values);
+	}
+
+	public boolean getTextMessageAllertSuccess(WebDriver driver, String values) {
+		waitToElementVisible(driver, AbstractPageUIAdmin.DYNAMIC_MESSAGE_ALLERT, values);
+		return isElementDisplayed(driver, AbstractPageUIAdmin.DYNAMIC_MESSAGE_ALLERT, values);
+	}
+
+	public void clickButtonInAddNewAddress(WebDriver driver, String values) {
+		waitToElementClickAble(driver, AbstractPageUIAdmin.DYNAMIC_BUTTON_IN_ADD_NEW_ADDRESS_PAGE, values);
+		clickToElement(driver, AbstractPageUIAdmin.DYNAMIC_BUTTON_IN_ADD_NEW_ADDRESS_PAGE, values);
 	}
 
 	private WebDriverWait explicitWait;

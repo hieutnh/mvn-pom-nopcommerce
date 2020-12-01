@@ -47,8 +47,8 @@ public class productPageOjectAdmin extends AbstractPage {
 	}
 
 	public void inputTextBoxByID(String value, String values) {
-		waitToElementVisible(driver, AbstractPageUIAdmin.DYNAMIC_TEXTBOX_SEARCH, values);
-		sendkeyToElement(driver, AbstractPageUIAdmin.DYNAMIC_TEXTBOX_SEARCH, value, values);
+		waitToElementVisible(driver, AbstractPageUIAdmin.DYNAMIC_TEXTBOX_ADMIN, values);
+		sendkeyToElement(driver, AbstractPageUIAdmin.DYNAMIC_TEXTBOX_ADMIN, value, values);
 	}
 	
 

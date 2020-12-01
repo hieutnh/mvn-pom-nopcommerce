@@ -10,11 +10,15 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.AbstractTest;
+import commons.DataHelper;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
 import pageOjectsAdmin.PageGeneratorManagerAdmin;
+import pageOjectsAdmin.addNewAddressPageObjectAdmin;
+import pageOjectsAdmin.customerAddNewPageObjectAdmin;
+import pageOjectsAdmin.customerPageObjectAdmin;
 import pageOjectsAdmin.homePageObjectAdmin;
 import pageOjectsAdmin.loginPageObjectAdmin;
 import pageOjectsAdmin.productInfoPageOjectAdmin;
@@ -25,7 +29,7 @@ import reportConfigAllure.AllureTestListener;
 public class Level_10_Admin extends AbstractTest {
 	WebDriver driver;
 	Select select;
-	String email, pass, firstname, lastname, reEmail;
+	String emailRegister, passRegister, firstnameRegister, lastnameRegister, reEmail, dateOfBirth, companyRegister, emailEdit;
 
 	// run all browsers
 	@Parameters({ "Browser", "url" })
@@ -33,6 +37,13 @@ public class Level_10_Admin extends AbstractTest {
 	public void beforeClass(String BrowserName, String appUrl) {
 		driver = getBrowserDriver(BrowserName, appUrl);
 
+		data = DataHelper.getData();
+		emailRegister = data.getEmail();
+		firstnameRegister = data.getFirstName();
+		lastnameRegister = data.getLastName();
+		dateOfBirth = "9/20/1992";
+		companyRegister = data.getCompanyName();
+		emailEdit = "test" + getRanDom() + "@gmail.com";
 	}
 
 	@Test
@@ -51,8 +62,8 @@ public class Level_10_Admin extends AbstractTest {
 	@Story("Story 2 - Search with product name")
 	@Severity(SeverityLevel.NORMAL)
 	public void TC_02_Search_With_Product_Name() {
-		homePage.clickToCatalog(driver, "fa fa-book");
-		homePage.clickToProductLink(driver, "Products");
+		homePage.clickToMenuParent(driver, "fa fa-book");
+		homePage.clickToChildMenuCatalogtLink(driver, "Products");
 		productPage = PageGeneratorManagerAdmin.getProductPage(driver);
 		productPage.inputTextBoxByID("Lenovo IdeaCentre 600 All-in-One PC", "SearchProductName");
 		productPage.clickButtonByID(driver, "search-products");
@@ -116,13 +127,175 @@ public class Level_10_Admin extends AbstractTest {
 
 	}
 
+	@Test
+	@Description("Create new customer")
+	@Story("Story 8 - Create new customer")
+	@Severity(SeverityLevel.CRITICAL)
+	public void TC_08_Create_New_Customer() {
+		productInfoPage.clickToMenuParent(driver, "fa fa-user");
+		productInfoPage.clickToChildMenuCustomersLink(driver, "Customers");
+		customerPage = PageGeneratorManagerAdmin.getCustomerPage(driver);
+		customerAddNewPage = customerPage.clickToAddNewCustomer();
+		customerAddNewPage.InputTextBoxAdminByID(driver, emailRegister, "Email");
+		customerAddNewPage.InputTextBoxAdminByID(driver, "123123", "Password");
+		customerAddNewPage.InputTextBoxAdminByID(driver, firstnameRegister, "FirstName");
+		customerAddNewPage.InputTextBoxAdminByID(driver, lastnameRegister, "LastName");
+		customerAddNewPage.clickToGenderRadioButton();
+		customerAddNewPage.InputTextBoxAdminByID(driver, dateOfBirth, "DateOfBirth");
+		customerAddNewPage.InputTextBoxAdminByID(driver, companyRegister, "Company");
+		customerAddNewPage.clickDeleteTitleCustomerRoles();
+		customerAddNewPage.clicktoDropdownCustomerRoles("Guests");
+		customerAddNewPage.inputAdminCommentTextBox("Add new customer (Guests)");
+		customerAddNewPage.clicktoButtonSaveAndContinue("save-continue");
+		Assert.assertTrue(customerAddNewPage.getTextMessageAllertSuccess(driver, "The new customer has been added successfully."));
+		Assert.assertEquals(customerAddNewPage.getAtributeAddSuccess(driver, "value", "Email"), emailRegister);
+		Assert.assertEquals(customerAddNewPage.getAtributeAddSuccess(driver, "value", "FirstName"), firstnameRegister);
+		Assert.assertEquals(customerAddNewPage.getAtributeAddSuccess(driver, "value", "LastName"), lastnameRegister);
+		Assert.assertEquals(customerAddNewPage.getAtributeAddSuccess(driver, "value", "DateOfBirth"), dateOfBirth);
+		Assert.assertEquals(customerAddNewPage.getAtributeAddSuccess(driver, "value", "Company"), companyRegister);
+		Assert.assertEquals(customerAddNewPage.getTextCustomerRolesAddSuccess(), "Guests");
+		Assert.assertTrue(customerAddNewPage.verifyCheckedActive());
+		Assert.assertEquals(customerAddNewPage.getTextAddSuccess(), "Add new customer (Guests)");
+		customerPage = customerAddNewPage.clickToBackToCustomerList();
+
+	}
+
+	@Test
+	@Description("Search Data Add New")
+	@Story("Story 9 - Search Custom With Email")
+	@Severity(SeverityLevel.NORMAL)
+	public void TC_09_Search_Custom_With_Email() {
+		customerPage.clickDeleteTitleCustomerRoles();
+		customerPage.clicktoDropdownCustomerRoles("Guests");
+		customerPage.InputTextBoxAdminByID(driver, emailRegister, "SearchEmail");
+		customerPage.clickButtonByID(driver, "search-customers");
+		Assert.assertEquals(customerPage.isDisplayOneItem(), 1);
+
+	}
+
+	@Test
+	@Description("Search Data Add New")
+	@Story("Story 10 - Search Custom With FirstName And LastName")
+	@Severity(SeverityLevel.NORMAL)
+	public void TC_10_Search_Custom_With_FirstName_And_LastName() {
+		customerPage.clickToChildMenuCustomersSelectedLink(driver, "Customers");
+		customerPage.InputTextBoxAdminByID(driver, firstnameRegister, "SearchFirstName");
+		customerPage.InputTextBoxAdminByID(driver, lastnameRegister, "SearchLastName");
+		customerPage.clickDeleteTitleCustomerRoles();
+		customerPage.clicktoDropdownCustomerRoles("Guests");
+		customerPage.clickButtonByID(driver, "search-customers");
+		Assert.assertTrue(customerPage.isDisplayUserAddNewWithCustomerRolesGuests("1", "Name", firstnameRegister + " " + lastnameRegister));
+		Assert.assertTrue(customerPage.isDisplayUserAddNewWithCustomerRolesGuests("1", "Customer roles", "Guests"));
+
+	}
+
+	@Test
+	@Description("Search Data Add New")
+	@Story("Story 11 - Search Custom With Customer And Company")
+	@Severity(SeverityLevel.NORMAL)
+	public void TC_11_Search_Custom_With_Customer_And_Company() {
+		customerPage.clickToChildMenuCustomersSelectedLink(driver, "Customers");
+		customerPage.InputTextBoxAdminByID(driver, companyRegister, "SearchCompany");
+		customerPage.clickDeleteTitleCustomerRoles();
+		customerPage.clicktoDropdownCustomerRoles("Guests");
+		customerPage.clickButtonByID(driver, "search-customers");
+		Assert.assertTrue(customerPage.isDisplayUserAddNewWithCustomerRolesGuests("1", "Company name", companyRegister));
+		Assert.assertTrue(customerPage.isDisplayUserAddNewWithCustomerRolesGuests("1", "Customer roles", "Guests"));
+
+	}
+
+	@Test
+	@Description("Search Data Add New")
+	@Story("Story 12 - Search Custom With Full Data")
+	@Severity(SeverityLevel.NORMAL)
+	public void TC_12_Search_Custom_With_Full_Data() {
+		customerPage.clickToChildMenuCustomersSelectedLink(driver, "Customers");
+		customerPage.InputTextBoxAdminByID(driver, emailRegister, "SearchEmail");
+		customerPage.InputTextBoxAdminByID(driver, firstnameRegister, "SearchFirstName");
+		customerPage.InputTextBoxAdminByID(driver, lastnameRegister, "SearchLastName");
+		customerPage.InputTextBoxAdminByID(driver, companyRegister, "SearchCompany");
+		customerPage.selectMonthOfFillDayOfBirth("9");
+		customerPage.selectDayOfFillDayOfBirth("20");
+		customerPage.clickDeleteTitleCustomerRoles();
+		customerPage.clicktoDropdownCustomerRoles("Guests");
+		customerPage.clickButtonByID(driver, "search-customers");
+		Assert.assertEquals(customerPage.isDisplayOneItem(), 1);
+	}
+
+	@Test
+	@Description("Edit Customer")
+	@Story("Story 13 - Edit Customer Add New")
+	@Severity(SeverityLevel.MINOR)
+	public void TC_13_Edit_Customer_Add_New() {
+		customerAddNewPage = customerPage.clickEditUser();
+		customerAddNewPage.InputTextBoxAdminByID(driver, emailEdit, "Email");
+		customerAddNewPage.InputTextBoxAdminByID(driver, "Automation", "FirstName");
+		customerAddNewPage.InputTextBoxAdminByID(driver, "Tester", "LastName");
+		customerAddNewPage.InputTextBoxAdminByID(driver, "10/25/2020", "DateOfBirth");
+		customerAddNewPage.InputTextBoxAdminByID(driver, "GamiTech", "Company");
+		customerAddNewPage.inputAdminCommentTextBox("Edit customer (Guests)");
+		customerAddNewPage.clicktoButtonSaveAndContinue("save");
+		customerPage = PageGeneratorManagerAdmin.getCustomerPage(driver);
+		Assert.assertTrue(customerAddNewPage.getTextMessageAllertSuccess(driver, "The customer has been updated successfully."));
+		customerPage.InputTextBoxAdminByID(driver, emailEdit, "SearchEmail");
+		customerPage.InputTextBoxAdminByID(driver, "Automation", "SearchFirstName");
+		customerPage.InputTextBoxAdminByID(driver, "Tester", "SearchLastName");
+		customerPage.InputTextBoxAdminByID(driver, "GamiTech", "SearchCompany");
+		customerPage.selectMonthOfFillDayOfBirth("10");
+		customerPage.selectDayOfFillDayOfBirth("25");
+		customerPage.clickDeleteTitleCustomerRoles();
+		customerPage.clicktoDropdownCustomerRoles("Guests");
+		customerPage.clickButtonByID(driver, "search-customers");
+		Assert.assertTrue(customerPage.isDisplayUserAddNewWithCustomerRolesGuests("1", "Email", "Guest"));
+		Assert.assertTrue(customerPage.isDisplayUserAddNewWithCustomerRolesGuests("1", "Name", "Automation" + " " + "Tester"));
+		Assert.assertTrue(customerPage.isDisplayUserAddNewWithCustomerRolesGuests("1", "Customer roles", "Guests"));
+		Assert.assertTrue(customerPage.isDisplayUserAddNewWithCustomerRolesGuests("1", "Company name", "GamiTech"));
+		Assert.assertEquals(customerPage.isDisplayActiveTrue("nop-value"), "true");
+	}
+
+	@Test
+	@Description("Add New Address")
+	@Story("Story 14 - Add New Address In Customer Detail")
+	@Severity(SeverityLevel.NORMAL)
+	public void TC_14_Add_New_Address_In_Customer_Detail() {
+		customerAddNewPage = customerPage.clickEditUser();
+		customerAddNewPage.clickAddresscollapse();
+		customerAddNewPage.clickButtonInAddNewAddress(driver,"Add new address");
+		addNewAddressPage = PageGeneratorManagerAdmin.getAddNewAddressPage(driver);
+		addNewAddressPage.InputTextBoxAdminByID(driver, "Automation", "Address_FirstName");
+		addNewAddressPage.InputTextBoxAdminByID(driver, "Tester", "Address_LastName");
+		addNewAddressPage.InputTextBoxAdminByID(driver, emailEdit, "Address_Email");
+		addNewAddressPage.InputTextBoxAdminByID(driver, "GamiTech", "Address_Company");
+		addNewAddressPage.selectCountryAddNewAddress("Viet Nam", "Address_CountryId");
+		addNewAddressPage.InputTextBoxAdminByID(driver, "Ho Chi Minh", "Address_City");
+		addNewAddressPage.InputTextBoxAdminByID(driver, "20 Van Coi, Tan Binh", "Address_Address1");
+		addNewAddressPage.InputTextBoxAdminByID(driver, "70000", "Address_ZipPostalCode");
+		addNewAddressPage.InputTextBoxAdminByID(driver, "0123456789", "Address_PhoneNumber");
+		addNewAddressPage.clickButtonInAddNewAddress(driver,"Save");
+		Assert.assertTrue(customerAddNewPage.getTextMessageAllertSuccess(driver, "The new address has been added successfully."));
+		Assert.assertEquals(customerAddNewPage.getAtributeAddSuccess(driver, "value", "Address_FirstName"), "Automation");
+		Assert.assertEquals(customerAddNewPage.getAtributeAddSuccess(driver, "value", "Address_LastName"), "Tester");
+		Assert.assertEquals(customerAddNewPage.getAtributeAddSuccess(driver, "value", "Address_Email"), emailEdit);
+		Assert.assertEquals(customerAddNewPage.getAtributeAddSuccess(driver, "value", "Address_Company"), "GamiTech");
+		Assert.assertEquals(customerAddNewPage.getAtributeAddSuccess(driver, "value", "Address_CountryId"), "Viet Nam");
+		Assert.assertEquals(customerAddNewPage.getAtributeAddSuccess(driver, "value", "Address_City"), "Ho Chi Minh");
+		Assert.assertEquals(customerAddNewPage.getAtributeAddSuccess(driver, "value", "Address_Address1"), "20 Van Coi, Tan Binh");
+		Assert.assertEquals(customerAddNewPage.getAtributeAddSuccess(driver, "value", "Address_ZipPostalCode"), "70000");
+		Assert.assertEquals(customerAddNewPage.getAtributeAddSuccess(driver, "value", "Address_PhoneNumber"), "0123456789");
+		Assert.assertEquals(customerAddNewPage.getTextCustomerRolesAddSuccess(), "Guests");
+	}
+
 	@AfterClass
 	public void afterClass() {
-		driver.quit();
+		removeDriver();
 	}
 
 	homePageObjectAdmin homePage;
 	loginPageObjectAdmin loginPage;
 	productPageOjectAdmin productPage;
 	productInfoPageOjectAdmin productInfoPage;
+	customerPageObjectAdmin customerPage;
+	customerAddNewPageObjectAdmin customerAddNewPage;
+	addNewAddressPageObjectAdmin addNewAddressPage;
+	public DataHelper data;
 }

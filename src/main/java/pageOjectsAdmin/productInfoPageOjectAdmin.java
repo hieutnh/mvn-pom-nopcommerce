@@ -13,15 +13,15 @@ public class productInfoPageOjectAdmin extends AbstractPage {
 		this.driver = driver;
 	}
 
-
 	public boolean isDisplayProducInfo() {
 		waitToElementVisible(driver, ProductPageUIInfoAdmin.PRODUCT_INFO_TEXT);
 		return isElementDisplayed(driver, ProductPageUIInfoAdmin.PRODUCT_INFO_TEXT);
 	}
 
-
 	public boolean isDisplayProductNameInfo() {
 		waitToElementVisible(driver, ProductPageUIInfoAdmin.PRODUCT_NAME_TEXT);
 		return isElementDisplayed(driver, ProductPageUIInfoAdmin.PRODUCT_NAME_TEXT);
 	}
+
+
 }

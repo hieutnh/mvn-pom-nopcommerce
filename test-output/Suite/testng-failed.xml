@@ -4,20 +4,15 @@
   <parameter name="url" value="https://admin-demo.nopcommerce.com/admin/"/>
   <listeners>
     <listener class-name="reportConfigAllure.AllureTestListener"/>
-    <listener class-name="commons.MethodListener"/>
   </listeners>
   <test thread-count="5" name="Run on chrome UI(failed)" parallel="tests">
     <parameter name="Browser" value="chrome_ui"/>
     <classes>
       <class name="com.nopcommerce.users.Level_10_Admin">
         <methods>
-          <include name="TC_04_Search_With_Product_Name_And_Parent_Category_checked"/>
-          <include name="TC_07_Go_Directly_To_Product_SKU"/>
+          <include name="TC_14_Add_New_Address_In_Customer_Detail"/>
           <include name="beforeClass"/>
-          <include name="TC_02_Search_With_Product_Name"/>
-          <include name="TC_03_Search_With_Product_Name_And_Parent_Category_Unchecked"/>
-          <include name="TC_05_Search_With_Product_Name_And_Child_Category"/>
-          <include name="TC_06_Search_With_Product_Name_Manufacturer"/>
+          <include name="TC_13_Edit_Customer_Add_New"/>
           <include name="afterClass"/>
         </methods>
       </class> <!-- com.nopcommerce.users.Level_10_Admin -->

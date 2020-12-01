@@ -38,8 +38,6 @@ import reportConfigAllure.ExtentTestManager_2_Capture;
 public class Common_01_Register extends AbstractTest {
 	WebDriver driver;
 	DriverManager driverManager;
-	ExtentReports extent;
-	ExtentTest extentTest;
 	Select select;
 	public static String email, pass, firstname, lastname, reEmail, email2;
 

@@ -572,3 +572,132 @@
 2020-11-27 10:40:53,552 INFO  com.nopcommerce.users.Level_10_Admin -  -------------------------- PASSED -------------------------- 
 2020-11-27 10:41:26,913 INFO  com.nopcommerce.users.Level_10_Admin -  -------------------------- FAILED -------------------------- 
 2020-11-27 10:43:24,886 INFO  com.nopcommerce.users.Level_10_Admin -  -------------------------- PASSED -------------------------- 
+2020-11-30 18:32:12,889 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+2020-11-30 18:32:12,926 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+2020-11-30 18:32:12,957 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+2020-11-30 18:32:12,988 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+2020-11-30 18:32:13,017 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+2020-11-30 18:32:14,754 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+2020-11-30 18:32:18,573 INFO  com.nopcommerce.common.Common_01_Register - OS name = windows 10
+2020-11-30 18:32:19,155 INFO  com.nopcommerce.common.Common_01_Register - ---------- QUIT BROWSER SUCCESS ----------
+2020-11-30 18:32:24,882 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
+2020-11-30 18:32:25,252 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
+2020-11-30 18:32:26,566 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
+2020-11-30 18:32:27,775 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
+2020-11-30 18:32:29,011 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
+2020-11-30 18:32:42,751 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+2020-11-30 18:32:42,781 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+2020-11-30 18:32:42,811 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+2020-11-30 18:32:42,863 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+2020-11-30 18:32:42,909 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+2020-11-30 18:32:43,162 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+2020-11-30 18:32:43,187 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+2020-11-30 18:32:43,210 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+2020-11-30 18:33:06,803 INFO  com.nopcommerce.users.Level_09_Search -  -------------------------- PASSED -------------------------- 
+2020-11-30 18:33:08,014 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 01:Input item not exits
+2020-11-30 18:33:08,064 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 02:click checkbox advance search
+2020-11-30 18:33:08,308 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 03:click dropdown sellect computers
+2020-11-30 18:33:08,588 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 04:click search button
+2020-11-30 18:33:09,112 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 05:Verify error message not found item
+2020-11-30 18:33:09,407 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Sub_Categories - Step 05:click search button
+2020-12-01 09:06:46,405 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:06:46,454 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:06:46,490 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:06:46,529 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:06:46,558 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:06:48,386 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:06:52,377 INFO  com.nopcommerce.common.Common_01_Register - OS name = windows 10
+2020-12-01 09:06:53,466 INFO  com.nopcommerce.common.Common_01_Register - ---------- QUIT BROWSER SUCCESS ----------
+2020-12-01 09:06:59,805 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:07:00,184 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:07:01,496 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:07:02,220 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:07:03,664 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:07:19,757 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:07:19,793 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:07:19,821 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:07:19,875 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:07:19,922 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:07:20,203 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:07:20,229 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:07:20,267 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:07:43,815 INFO  com.nopcommerce.users.Level_09_Search -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:07:44,545 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 01:Input item not exits
+2020-12-01 09:07:44,619 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 02:click checkbox advance search
+2020-12-01 09:07:44,881 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 03:click dropdown sellect computers
+2020-12-01 09:07:45,188 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 04:click search button
+2020-12-01 09:07:46,540 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 05:Verify error message not found item
+2020-12-01 09:07:46,844 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Sub_Categories - Step 05:click search button
+2020-12-01 09:29:16,561 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:29:16,611 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:29:16,652 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:29:16,686 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:29:16,715 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:29:18,582 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:29:24,426 INFO  com.nopcommerce.common.Common_01_Register - OS name = windows 10
+2020-12-01 09:29:25,544 INFO  com.nopcommerce.common.Common_01_Register - ---------- QUIT BROWSER SUCCESS ----------
+2020-12-01 09:29:31,682 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:29:32,088 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:29:32,703 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:29:34,137 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:29:35,552 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:29:50,462 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:29:50,492 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:29:50,523 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:29:50,580 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:29:50,625 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:29:50,887 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:29:50,921 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:29:50,951 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:30:15,410 INFO  com.nopcommerce.users.Level_09_Search -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:30:16,152 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 01:Input item not exits
+2020-12-01 09:30:16,215 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 02:click checkbox advance search
+2020-12-01 09:30:16,462 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 03:click dropdown sellect computers
+2020-12-01 09:30:16,741 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 04:click search button
+2020-12-01 09:30:17,333 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 05:Verify error message not found item
+2020-12-01 09:30:17,643 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Sub_Categories - Step 05:click search button
+2020-12-01 09:50:28,913 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:50:28,966 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:50:29,013 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:50:29,066 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:50:29,117 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:50:31,491 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:50:36,861 INFO  com.nopcommerce.common.Common_01_Register - OS name = windows 10
+2020-12-01 09:50:37,476 INFO  com.nopcommerce.common.Common_01_Register - ---------- QUIT BROWSER SUCCESS ----------
+2020-12-01 09:50:43,717 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:50:44,234 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:50:45,738 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:50:47,257 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:50:48,159 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:51:04,738 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:51:04,791 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:51:04,854 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:51:04,938 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:51:05,038 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:51:05,317 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:51:05,401 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:51:05,470 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:51:30,017 INFO  com.nopcommerce.users.Level_09_Search -  -------------------------- PASSED -------------------------- 
+2020-12-01 09:51:30,873 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 01:Input item not exits
+2020-12-01 09:51:30,976 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 02:click checkbox advance search
+2020-12-01 09:51:31,261 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 03:click dropdown sellect computers
+2020-12-01 09:51:31,609 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 04:click search button
+2020-12-01 09:51:32,233 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 05:Verify error message not found item
+2020-12-01 09:51:32,628 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Sub_Categories - Step 05:click search button
+2020-12-01 17:59:23,251 INFO  com.nopcommerce.users.Level_10_Admin - OS name = windows 10
+2020-12-01 17:59:23,892 INFO  com.nopcommerce.users.Level_10_Admin - ---------- QUIT BROWSER SUCCESS ----------
+2020-12-01 18:06:27,391 INFO  com.nopcommerce.users.Level_10_Admin - OS name = windows 10
+2020-12-01 18:06:27,446 INFO  com.nopcommerce.users.Level_10_Admin - Tried to run command without establishing a connection
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'DESKTOP-ACFHNHV', ip: '192.168.1.90', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201108180448, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 11728, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3a818603-a18c-4abe-9eb3-df224bc2851c
+2020-12-01 18:09:57,551 INFO  com.nopcommerce.users.Level_10_Admin - OS name = windows 10
+2020-12-01 18:09:58,228 INFO  com.nopcommerce.users.Level_10_Admin - ---------- QUIT BROWSER SUCCESS ----------
+2020-12-01 18:18:04,758 INFO  com.nopcommerce.users.Level_10_Admin - OS name = windows 10
+2020-12-01 18:18:05,440 INFO  com.nopcommerce.users.Level_10_Admin - ---------- QUIT BROWSER SUCCESS ----------
+2020-12-01 18:21:55,483 INFO  com.nopcommerce.users.Level_10_Admin - OS name = windows 10
+2020-12-01 18:21:56,188 INFO  com.nopcommerce.users.Level_10_Admin - ---------- QUIT BROWSER SUCCESS ----------
+2020-12-01 18:33:08,671 INFO  com.nopcommerce.users.Level_10_Admin - OS name = windows 10
+2020-12-01 18:33:09,342 INFO  com.nopcommerce.users.Level_10_Admin - ---------- QUIT BROWSER SUCCESS ----------

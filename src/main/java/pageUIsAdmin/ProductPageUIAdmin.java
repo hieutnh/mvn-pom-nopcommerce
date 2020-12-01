@@ -1,7 +1,6 @@
 package pageUIsAdmin;
 
 public class ProductPageUIAdmin {
-	public static final String DYNAMIC_SEARCH_BUTTON = "//button[@id='%s']";
 	public static final String PRODUCT_LENOVO_ROW = "//td[contains(text(),'Lenovo IdeaCentre 600 All-in-One PC')]//ancestor::tr";
 	public static final String DYNAMIC_DROPDOW_SEARCH = "//select[@id='%s']";
 	public static final String SEARCHSUBCATEGORIES_CHECKBOX = "//input[@id='SearchIncludeSubCategories']";
