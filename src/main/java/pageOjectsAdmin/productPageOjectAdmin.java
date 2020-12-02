@@ -14,8 +14,6 @@ public class productPageOjectAdmin extends AbstractPage {
 		this.driver = driver;
 	}
 
-
-
 	public int isDisplayLenovoProduct() {
 		waitToElementVisible(driver, ProductPageUIAdmin.PRODUCT_LENOVO_ROW);
 		return countElementSize(driver, ProductPageUIAdmin.PRODUCT_LENOVO_ROW);
@@ -50,6 +48,4 @@ public class productPageOjectAdmin extends AbstractPage {
 		waitToElementVisible(driver, AbstractPageUIAdmin.DYNAMIC_TEXTBOX_ADMIN, values);
 		sendkeyToElement(driver, AbstractPageUIAdmin.DYNAMIC_TEXTBOX_ADMIN, value, values);
 	}
-	
-
 }

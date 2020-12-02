@@ -65,4 +65,16 @@ public class customerAddNewPageObjectAdmin extends AbstractPage {
 		checkDisplayToClick(driver, CustomerAddNewPageUIAdmin.ADDRESS_COLLAPSE);
 	}
 
+	public void clickDeleteAddress() {
+		waitToElementClickAble(driver, CustomerAddNewPageUIAdmin.DELETE_ADDRESS_BUTTON);
+		clickToElement(driver, CustomerAddNewPageUIAdmin.DELETE_ADDRESS_BUTTON);
+	}
+
+	public String getTextDeleteAddressSuccess() {
+		waitToElementVisible(driver, CustomerAddNewPageUIAdmin.MESSAGE_DELETE_ADDRESS);
+		return getElementText(driver, CustomerAddNewPageUIAdmin.MESSAGE_DELETE_ADDRESS);
+	}
+
+	
+
 }

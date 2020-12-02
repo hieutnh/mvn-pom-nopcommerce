@@ -152,12 +152,15 @@ public class AbstractPage {
 
 	public void checkDisplayToClick(WebDriver driver, String locator) {
 		if (driver.toString().toLowerCase().contains("firefox") || driver.toString().toLowerCase().contains("edge")) {
-			sleepInMiliSecond(500);
+			sleepInMiliSecond(1000);
 		}
 		element = getElement(driver, locator);
 		if (element.isDisplayed()) {
+			sleepInMiliSecond(1000);
+			element.click();
+			sleepInMiliSecond(1000);
 		}
-		element.click();
+
 	}
 
 	public void clickToElement(WebDriver driver, String locator, String... values) {
@@ -302,11 +305,6 @@ public class AbstractPage {
 	public String getElementText(WebDriver driver, String locator) {
 		element = getElement(driver, locator);
 		return element.getText();
-	}
-
-	public String getElementText1(WebDriver driver, String locator) {
-		element = getElement(driver, locator);
-		return element.getText().trim();
 	}
 
 	public String getElementText(WebDriver driver, String locator, String... values) {
@@ -588,6 +586,11 @@ public class AbstractPage {
 		explicitWait.until(ExpectedConditions.presenceOfElementLocated(getByXpath(locator)));
 	}
 
+	public void waitToElementStaleness(WebDriver driver, String locator) {
+		explicitWait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
+		explicitWait.until(ExpectedConditions.stalenessOf(getElement(driver, locator)));
+	}
+
 	public void waitToElementVisible(WebDriver driver, String locator) {
 		explicitWait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
 		explicitWait.until(ExpectedConditions.visibilityOfElementLocated(getByXpath(locator)));
@@ -830,7 +833,7 @@ public class AbstractPage {
 		clickToElement(driver, AbstractPageUIAdmin.DYNAMIC_LIST_MENU_CATALOG_CHILD_LINK_DASBOARD, values);
 	}
 
-	public void clickToChildMenuCustomersLink(WebDriver driver, String values) {
+	public void clickToChildMenuNotSelectCustomersLink(WebDriver driver, String values) {
 		waitToElementClickAble(driver, AbstractPageUIAdmin.DYNAMIC_LIST_MENU_CUSTOMERS_CHILD_NOT_SELECTED_LINK_DASBOARD, values);
 		clickToElement(driver, AbstractPageUIAdmin.DYNAMIC_LIST_MENU_CUSTOMERS_CHILD_NOT_SELECTED_LINK_DASBOARD, values);
 	}

@@ -13,6 +13,8 @@ public class searchFooterPageUI {
 	public static final String MANUFACTURER_DROPDOWN = "//select[@id='mid']";
 	public static final String PRICETOTEXTBOX = "//input[@id='pt']";
 	public static final String PRICEFROMTEXTBOX = "//input[@id='pf']";
+	public static final String COMPUTER_LINK_ON_CATEGORIES = "//li[@class='inactive']//a[contains(text(),'Computers')]";
+	
 	
 	
 	

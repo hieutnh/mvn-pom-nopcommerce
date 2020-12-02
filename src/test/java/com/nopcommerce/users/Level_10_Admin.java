@@ -122,6 +122,7 @@ public class Level_10_Admin extends AbstractTest {
 		productPage.inputTextBoxByID("LE_IC_600", "GoDirectlyToSku");
 		productPage.clickButtonByID(driver, "go-to-product-by-sku");
 		productInfoPage = PageGeneratorManagerAdmin.getProductInfoPage(driver);
+//		productInfoPage.clickProductInfoExpand();
 		Assert.assertTrue(productInfoPage.isDisplayProducInfo());
 		Assert.assertTrue(productInfoPage.isDisplayProductNameInfo());
 
@@ -133,7 +134,7 @@ public class Level_10_Admin extends AbstractTest {
 	@Severity(SeverityLevel.CRITICAL)
 	public void TC_08_Create_New_Customer() {
 		productInfoPage.clickToMenuParent(driver, "fa fa-user");
-		productInfoPage.clickToChildMenuCustomersLink(driver, "Customers");
+		productInfoPage.clickToChildMenuNotSelectCustomersLink(driver, "Customers");
 		customerPage = PageGeneratorManagerAdmin.getCustomerPage(driver);
 		customerAddNewPage = customerPage.clickToAddNewCustomer();
 		customerAddNewPage.InputTextBoxAdminByID(driver, emailRegister, "Email");
@@ -259,30 +260,47 @@ public class Level_10_Admin extends AbstractTest {
 	@Severity(SeverityLevel.NORMAL)
 	public void TC_14_Add_New_Address_In_Customer_Detail() {
 		customerAddNewPage = customerPage.clickEditUser();
-		customerAddNewPage.clickAddresscollapse();
-		customerAddNewPage.clickButtonInAddNewAddress(driver,"Add new address");
+//		customerAddNewPage.clickAddresscollapse();
+		customerAddNewPage.clickButtonInAddNewAddress(driver, "Add new address");
 		addNewAddressPage = PageGeneratorManagerAdmin.getAddNewAddressPage(driver);
 		addNewAddressPage.InputTextBoxAdminByID(driver, "Automation", "Address_FirstName");
 		addNewAddressPage.InputTextBoxAdminByID(driver, "Tester", "Address_LastName");
 		addNewAddressPage.InputTextBoxAdminByID(driver, emailEdit, "Address_Email");
 		addNewAddressPage.InputTextBoxAdminByID(driver, "GamiTech", "Address_Company");
-		addNewAddressPage.selectCountryAddNewAddress("Viet Nam", "Address_CountryId");
+		addNewAddressPage.selectCountryAddNewAddress("Viet Nam");
 		addNewAddressPage.InputTextBoxAdminByID(driver, "Ho Chi Minh", "Address_City");
 		addNewAddressPage.InputTextBoxAdminByID(driver, "20 Van Coi, Tan Binh", "Address_Address1");
 		addNewAddressPage.InputTextBoxAdminByID(driver, "70000", "Address_ZipPostalCode");
 		addNewAddressPage.InputTextBoxAdminByID(driver, "0123456789", "Address_PhoneNumber");
-		addNewAddressPage.clickButtonInAddNewAddress(driver,"Save");
+		addNewAddressPage.clickButtonInAddNewAddress(driver, "Save");
 		Assert.assertTrue(customerAddNewPage.getTextMessageAllertSuccess(driver, "The new address has been added successfully."));
-		Assert.assertEquals(customerAddNewPage.getAtributeAddSuccess(driver, "value", "Address_FirstName"), "Automation");
-		Assert.assertEquals(customerAddNewPage.getAtributeAddSuccess(driver, "value", "Address_LastName"), "Tester");
-		Assert.assertEquals(customerAddNewPage.getAtributeAddSuccess(driver, "value", "Address_Email"), emailEdit);
-		Assert.assertEquals(customerAddNewPage.getAtributeAddSuccess(driver, "value", "Address_Company"), "GamiTech");
-		Assert.assertEquals(customerAddNewPage.getAtributeAddSuccess(driver, "value", "Address_CountryId"), "Viet Nam");
-		Assert.assertEquals(customerAddNewPage.getAtributeAddSuccess(driver, "value", "Address_City"), "Ho Chi Minh");
-		Assert.assertEquals(customerAddNewPage.getAtributeAddSuccess(driver, "value", "Address_Address1"), "20 Van Coi, Tan Binh");
-		Assert.assertEquals(customerAddNewPage.getAtributeAddSuccess(driver, "value", "Address_ZipPostalCode"), "70000");
-		Assert.assertEquals(customerAddNewPage.getAtributeAddSuccess(driver, "value", "Address_PhoneNumber"), "0123456789");
-		Assert.assertEquals(customerAddNewPage.getTextCustomerRolesAddSuccess(), "Guests");
+		Assert.assertEquals(addNewAddressPage.getAtributeAddSuccess(driver, "value", "Address_FirstName"), "Automation");
+		Assert.assertEquals(addNewAddressPage.getAtributeAddSuccess(driver, "value", "Address_LastName"), "Tester");
+		Assert.assertEquals(addNewAddressPage.getAtributeAddSuccess(driver, "value", "Address_Email"), emailEdit);
+		Assert.assertEquals(addNewAddressPage.getAtributeAddSuccess(driver, "value", "Address_Company"), "GamiTech");
+		Assert.assertEquals(addNewAddressPage.getAtributeAddAddressCountrySuccess(), "Viet Nam");
+		Assert.assertEquals(addNewAddressPage.getAtributeAddSuccess(driver, "value", "Address_City"), "Ho Chi Minh");
+		Assert.assertEquals(addNewAddressPage.getAtributeAddSuccess(driver, "value", "Address_Address1"), "20 Van Coi, Tan Binh");
+		Assert.assertEquals(addNewAddressPage.getAtributeAddSuccess(driver, "value", "Address_ZipPostalCode"), "70000");
+		Assert.assertEquals(addNewAddressPage.getAtributeAddSuccess(driver, "value", "Address_PhoneNumber"), "0123456789");
+	}
+
+	@Test
+	@Description("Delete Address")
+	@Story("Story 15 - Delete Address In Customer Detail")
+	@Severity(SeverityLevel.NORMAL)
+	public void TC_15_Delete_New_Address_In_Customer_Detail() {
+		addNewAddressPage.clickToChildMenuCatalogtLink(driver, "Customers");
+		customerPage = PageGeneratorManagerAdmin.getCustomerPage(driver);
+		customerPage.InputTextBoxAdminByID(driver, emailEdit, "Email");
+		customerPage.InputTextBoxAdminByID(driver, "Automation", "FirstName");
+		customerPage.InputTextBoxAdminByID(driver, "Tester", "LastName");
+		customerPage.InputTextBoxAdminByID(driver, "10/25/2020", "DateOfBirth");
+		customerPage.InputTextBoxAdminByID(driver, "GamiTech", "Company");
+		customerPage.clickButtonByID(driver, "search-customers");
+		customerAddNewPage = customerPage.clickEditUser();
+		customerAddNewPage.clickDeleteAddress();
+		Assert.assertEquals(customerAddNewPage.getTextDeleteAddressSuccess(), "No data available in table");
 	}
 
 	@AfterClass

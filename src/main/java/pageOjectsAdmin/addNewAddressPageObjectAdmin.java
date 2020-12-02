@@ -12,10 +12,13 @@ public class addNewAddressPageObjectAdmin extends AbstractPage {
 		this.driver = driver;
 	}
 
-
-	public void selectCountryAddNewAddress(String value, String values) {
-		waitToElementClickAble(driver, AddNewAddressPageUIAdmin.DYNAMIC_TEXTBOX_ADDRESS, values);
-		selectItemInDropdown(driver, AddNewAddressPageUIAdmin.DYNAMIC_TEXTBOX_ADDRESS,value, values);
+	public void selectCountryAddNewAddress(String value) {
+		waitToElementClickAble(driver, AddNewAddressPageUIAdmin.TEXTBOX_ADDRESS);
+		selectItemInDropdown(driver, AddNewAddressPageUIAdmin.TEXTBOX_ADDRESS, value);
 	}
 
+	public String getAtributeAddAddressCountrySuccess() {
+		waitToElementVisible(driver, AddNewAddressPageUIAdmin.COUNTRY_DROPDOWN);
+		return getSelectedItemInDropdown(driver, AddNewAddressPageUIAdmin.COUNTRY_DROPDOWN);
+	}
 }

@@ -88,4 +88,12 @@ public class searchFooterPageObject extends AbstractPage {
 		sendkeyToElement(driver, searchFooterPageUI.PRICETOTEXTBOX, value);
 	}
 
+	public computerOnCategoriesPageObject clickComputerLinkOnCategories() {
+		waitToElementsVisible(driver, searchFooterPageUI.COMPUTER_LINK_ON_CATEGORIES);
+		clickToElement(driver, searchFooterPageUI.COMPUTER_LINK_ON_CATEGORIES);
+		return PageGeneratorManager.getComputerOnCategoriesPage(driver);
+	}
+
+	
+
 }

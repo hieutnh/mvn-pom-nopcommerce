@@ -23,5 +23,9 @@ public class productInfoPageOjectAdmin extends AbstractPage {
 		return isElementDisplayed(driver, ProductPageUIInfoAdmin.PRODUCT_NAME_TEXT);
 	}
 
+	public void clickProductInfoExpand() {
+		waitToElementClickAble(driver, ProductPageUIInfoAdmin.PRODUCT_INFO_EXPAND);
+		checkDisplayToClick(driver, ProductPageUIInfoAdmin.PRODUCT_INFO_EXPAND);
+	}
 
 }

@@ -13,6 +13,8 @@ public class CustomerAddNewPageUIAdmin {
 	public static final String ACTIVE_CHECKBOX = "//input[@id='Active']";
 	public static final String ADMIN_COMMENT_TEXT = "//textarea[@id='AdminComment']";
 	public static final String ADDRESS_COLLAPSE = "//div[@class='panel-heading']//span[text()='Addresses']";
+	public static final String DELETE_ADDRESS_BUTTON = "//a[contains(text(),'Delete')]";
+	public static final String MESSAGE_DELETE_ADDRESS = "//div[@class='panel-container']//td[@class='dataTables_empty']";
 	
 	
 	

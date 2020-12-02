@@ -45,7 +45,6 @@ public class TestSum extends AbstractTest {
 		jsExecutor = (JavascriptExecutor) driver;
 	}
 	
-	@Test
 	@Description("Check input data and total")
 	@Story("Story 1 - Not input data")
 	@Severity(SeverityLevel.NORMAL)
@@ -56,7 +55,6 @@ public class TestSum extends AbstractTest {
 		verifyEquals(ABC, "Please input No1,Please input No2");
 	}
 	
-	@Test
 	@Story("Story 2 - Not input data not valid")
 	@Severity(SeverityLevel.NORMAL)
 	public void TC_02_Input_Not_Invalid() {
@@ -67,7 +65,6 @@ public class TestSum extends AbstractTest {
 		verifyEquals(errorMessageNotValid.getText(), "Input value is not valid.");
 	}
 	
-	@Test
 	@Story("Story 2 - Not input data valid")
 	@Severity(SeverityLevel.NORMAL)
 	public void TC_03_Input_Value_Valid() {
@@ -81,6 +78,24 @@ public class TestSum extends AbstractTest {
 		verifyEquals(messageSuccess.getText(), "");
 	}
 
+	@Test
+	public void TC_03_Random_Popup() {
+//		driver.get("https://blog.testproject.io/");
+		sleepInSecond(20);
+		WebElement showregisterForm = driver.findElement(By.xpath("//div[@class='mailch-wrap rocket-lazyload']"));
+		if (showregisterForm.isDisplayed()) {
+			Assert.assertTrue(driver.findElement(By.xpath("//img[@class='right-arr lazyloaded']")).isDisplayed());
+			sleepInSecond(2);
+			driver.findElement(By.xpath("//div[@id='close-mailch']//*[local-name()='svg']")).click();
+			sleepInSecond(2);
+		}
+
+		driver.findElement(By.xpath("//section[@id='search-2']//input[@placeholder='Search Articles']")).sendKeys("Selenium");
+		sleepInSecond(2);
+		driver.findElement(By.xpath("//section[@id='search-2']//span[@class='glass']")).click();
+		sleepInSecond(2);
+	}
+	
 	@AfterClass
 	public void afterClass() {
 		driver.quit();

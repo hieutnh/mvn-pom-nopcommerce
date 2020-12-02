@@ -47,5 +47,13 @@ public class PageGeneratorManager {
 	public static searchFooterPageObject getsearchFooterPage(WebDriver driver) {
 		return new searchFooterPageObject(driver);
 	}
+	
+	public static computerOnCategoriesPageObject getComputerOnCategoriesPage(WebDriver driver) {
+		return new computerOnCategoriesPageObject(driver);
+	}
+	
+	public static destopOnCategoriesPageObject getDestopOnCategoriesPage(WebDriver driver) {
+		return new destopOnCategoriesPageObject(driver);
+	}
 
 }

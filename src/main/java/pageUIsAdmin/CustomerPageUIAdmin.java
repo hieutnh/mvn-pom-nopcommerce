@@ -11,7 +11,9 @@ public class CustomerPageUIAdmin {
 	public static final String MONTH_OF_MONTH_OF_BIRTH_DROPDOWN = "//select[@id='SearchMonthOfBirth']";
 	public static final String MONTH_OF_DAY_OF_BIRTH_DROPDOWN = "//select[@id='SearchDayOfBirth']";
 	public static final String EDIT_USER_BUTTON = "//i[@class='fa fa-pencil']";
-	public static final String ACTIVE_CHECK_TRUE = "//i[@class='fa fa-close false-icon']";
+	public static final String ACTIVE_CHECK_TRUE = "//i[@class='fa fa-check true-icon']";
+	
+	
 	
 	
 	
