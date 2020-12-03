@@ -75,6 +75,8 @@ public class customerAddNewPageObjectAdmin extends AbstractPage {
 		return getElementText(driver, CustomerAddNewPageUIAdmin.MESSAGE_DELETE_ADDRESS);
 	}
 
-	
+	public void selectAcceptAlert() {
+		acceptAlert(driver);
+	}
 
 }

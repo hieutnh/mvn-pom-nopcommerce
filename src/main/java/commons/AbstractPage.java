@@ -653,7 +653,7 @@ public class AbstractPage {
 		ArrayList<Float> arrayList = new ArrayList<Float>();
 		List<WebElement> elementList = getElements(driver, locator);
 		for (WebElement element : elementList) {
-			arrayList.add(Float.parseFloat(element.getText().replace("$", "").trim()));
+			arrayList.add(Float.parseFloat(element.getText().replace("$", "").replace(",", "").trim()));
 		}
 
 		System.out.println("------------------Data on UI ------------------");
@@ -719,6 +719,68 @@ public class AbstractPage {
 		Collections.reverse(arrayList);
 		System.out.println("------------------Data sorted DESC on code ------------------");
 		for (String name : arrayList) {
+			System.out.println(name);
+		}
+
+		return sortedList.equals(arrayList);
+
+	}
+
+	public boolean isPriceSortedDescending(WebDriver driver, String locator) {
+		ArrayList<Float> arrayList = new ArrayList<Float>();
+		List<WebElement> elementList = getElements(driver, locator);
+		for (WebElement element : elementList) {
+			arrayList.add(Float.parseFloat(element.getText().replace("$", "").replace(",", "").trim()));
+		}
+
+		System.out.println("------------------Data on UI ------------------");
+		for (Float name : arrayList) {
+			System.out.println(name);
+		}
+		ArrayList<Float> sortedList = new ArrayList<>();
+		for (Float child : arrayList) {
+			sortedList.add(child);
+		}
+		Collections.sort(arrayList);
+		System.out.println("------------------Data sorted on code ------------------");
+		for (Float name : arrayList) {
+			System.out.println(name);
+		}
+
+		Collections.reverse(arrayList);
+		System.out.println("------------------Data sorted DESC on code ------------------");
+		for (Float name : arrayList) {
+			System.out.println(name);
+		}
+
+		return sortedList.equals(arrayList);
+
+	}
+
+	public boolean isDateSortDescending(WebDriver driver, String locator) throws ParseException {
+		ArrayList<Date> arrayList = new ArrayList<Date>();
+		List<WebElement> elementList = getElements(driver, locator);
+		for (WebElement element : elementList) {
+			SimpleDateFormat date = new SimpleDateFormat("dd/mm/yyyy");
+			arrayList.add(date.parse(element.getText()));
+		}
+
+		System.out.println("------------------Data on UI ------------------");
+		for (Date name : arrayList) {
+			System.out.println(name);
+		}
+		ArrayList<Date> sortedList = new ArrayList<>();
+		for (Date child : arrayList) {
+			sortedList.add(child);
+		}
+		Collections.sort(arrayList);
+		System.out.println("------------------Data sorted on code ------------------");
+		for (Date name : arrayList) {
+			System.out.println(name);
+		}
+		Collections.reverse(arrayList);
+		System.out.println("------------------Data sorted DESC on code ------------------");
+		for (Date name : arrayList) {
 			System.out.println(name);
 		}
 
@@ -829,10 +891,14 @@ public class AbstractPage {
 	}
 
 	public void clickToChildMenuCatalogtLink(WebDriver driver, String values) {
-		waitToElementClickAble(driver, AbstractPageUIAdmin.DYNAMIC_LIST_MENU_CATALOG_CHILD_LINK_DASBOARD, values);
-		clickToElement(driver, AbstractPageUIAdmin.DYNAMIC_LIST_MENU_CATALOG_CHILD_LINK_DASBOARD, values);
+		waitToElementClickAble(driver, AbstractPageUIAdmin.DYNAMIC_LIST_MENU_CUSTOMERS_CHILD_SELECTED_LINK_DASBOARD, values);
+		clickToElement(driver, AbstractPageUIAdmin.DYNAMIC_LIST_MENU_CUSTOMERS_CHILD_SELECTED_LINK_DASBOARD, values);
 	}
 
+	public void clickToChildNot_SelectMenuCatalogtLink(WebDriver driver, String values) {
+		waitToElementClickAble(driver, AbstractPageUIAdmin.DYNAMIC_LIST_MENU_CUSTOMERS_CHILD_NOT_SELECTED_LINK_DASBOARD, values);
+		clickToElement(driver, AbstractPageUIAdmin.DYNAMIC_LIST_MENU_CUSTOMERS_CHILD_NOT_SELECTED_LINK_DASBOARD, values);
+	}
 	public void clickToChildMenuNotSelectCustomersLink(WebDriver driver, String values) {
 		waitToElementClickAble(driver, AbstractPageUIAdmin.DYNAMIC_LIST_MENU_CUSTOMERS_CHILD_NOT_SELECTED_LINK_DASBOARD, values);
 		clickToElement(driver, AbstractPageUIAdmin.DYNAMIC_LIST_MENU_CUSTOMERS_CHILD_NOT_SELECTED_LINK_DASBOARD, values);

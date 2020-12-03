@@ -62,7 +62,20 @@ public class Level_11_Sort extends AbstractTest {
 		searchFooterPage = homePage.clickSearchFooter();
 		computerOnCategoriesPage = searchFooterPage.clickComputerLinkOnCategories();
 		destopOnCategoriesPage = computerOnCategoriesPage.clickDestopLinkOnMainScreen();
-
+		destopOnCategoriesPage.selectSortDropdown("Name: A to Z");
+		Assert.assertTrue(destopOnCategoriesPage.isNameSortAscending());
+		destopOnCategoriesPage.selectSortDropdown("Name: Z to A");
+		Assert.assertTrue(destopOnCategoriesPage.isNameSortDescending());
+		destopOnCategoriesPage.selectSortDropdown("Price: Low to High");
+		Assert.assertTrue(destopOnCategoriesPage.isPriceSortAscending());
+		destopOnCategoriesPage.selectSortDropdown("Price: High to Low");
+		Assert.assertTrue(destopOnCategoriesPage.isPriceSortDescending());
+		destopOnCategoriesPage.selectDisplayPerPage("3");
+		Assert.assertTrue(destopOnCategoriesPage.countItemInDestopMenu() <= 3);
+		destopOnCategoriesPage.selectDisplayPerPage("6");
+		Assert.assertTrue(destopOnCategoriesPage.countItemInDestopMenu() <= 6);
+		destopOnCategoriesPage.selectDisplayPerPage("9");
+		Assert.assertTrue(destopOnCategoriesPage.countItemInDestopMenu() <= 9);
 	}
 
 	@AfterClass

@@ -1,2 +1,0 @@
-2020-12-02 16:09:24,867 INFO  com.nopcommerce.users.Level_10_Admin - OS name = windows 10
-2020-12-02 16:09:25,553 INFO  com.nopcommerce.users.Level_10_Admin - ---------- QUIT BROWSER SUCCESS ----------

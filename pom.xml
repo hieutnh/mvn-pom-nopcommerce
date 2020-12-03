@@ -130,9 +130,6 @@
 		</dependency>
 
 
-
-
-
 		<!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
 		<dependency>
 			<groupId>com.relevantcodes</groupId>
@@ -155,9 +152,7 @@
 			<artifactId>commons-io</artifactId>
 			<version>2.8.0</version>
 		</dependency>
-
 	</dependencies>
-
 	<!-- Compiler/ Run Test -->
 	<build>
 		<plugins>

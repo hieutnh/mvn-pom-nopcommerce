@@ -63,7 +63,7 @@ public class Level_10_Admin extends AbstractTest {
 	@Severity(SeverityLevel.NORMAL)
 	public void TC_02_Search_With_Product_Name() {
 		homePage.clickToMenuParent(driver, "fa fa-book");
-		homePage.clickToChildMenuCatalogtLink(driver, "Products");
+		homePage.clickToChildNot_SelectMenuCatalogtLink(driver, "Products");
 		productPage = PageGeneratorManagerAdmin.getProductPage(driver);
 		productPage.inputTextBoxByID("Lenovo IdeaCentre 600 All-in-One PC", "SearchProductName");
 		productPage.clickButtonByID(driver, "search-products");
@@ -292,14 +292,18 @@ public class Level_10_Admin extends AbstractTest {
 	public void TC_15_Delete_New_Address_In_Customer_Detail() {
 		addNewAddressPage.clickToChildMenuCatalogtLink(driver, "Customers");
 		customerPage = PageGeneratorManagerAdmin.getCustomerPage(driver);
-		customerPage.InputTextBoxAdminByID(driver, emailEdit, "Email");
-		customerPage.InputTextBoxAdminByID(driver, "Automation", "FirstName");
-		customerPage.InputTextBoxAdminByID(driver, "Tester", "LastName");
-		customerPage.InputTextBoxAdminByID(driver, "10/25/2020", "DateOfBirth");
-		customerPage.InputTextBoxAdminByID(driver, "GamiTech", "Company");
+		customerPage.InputTextBoxAdminByID(driver, emailEdit, "SearchEmail");
+		customerPage.InputTextBoxAdminByID(driver, "Automation", "SearchFirstName");
+		customerPage.InputTextBoxAdminByID(driver, "Tester", "SearchLastName");
+		customerPage.selectMonthOfFillDayOfBirth("10");
+		customerPage.selectDayOfFillDayOfBirth("25");
+		customerPage.InputTextBoxAdminByID(driver, "GamiTech", "SearchCompany");
+		customerPage.clickDeleteTitleCustomerRoles();
+		customerPage.clicktoDropdownCustomerRoles("Guests");
 		customerPage.clickButtonByID(driver, "search-customers");
 		customerAddNewPage = customerPage.clickEditUser();
 		customerAddNewPage.clickDeleteAddress();
+		customerAddNewPage.selectAcceptAlert();
 		Assert.assertEquals(customerAddNewPage.getTextDeleteAddressSuccess(), "No data available in table");
 	}
 

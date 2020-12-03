@@ -22,6 +22,7 @@
 			<class name="com.nopcommerce.users.Level_08_Login" />
 			<class name="com.nopcommerce.users.Level_08_My_Account" />
 			<class name="com.nopcommerce.users.Level_09_Search" />
+			<class name="com.nopcommerce.users.Level_11_Sort" />
 		</classes>
 	</test>
 
