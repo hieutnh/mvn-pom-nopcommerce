@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <suite name="Suite" parallel="tests" thread-cound="2">
-	<parameter name="url" value="http://www.amazon.in/" />
+	<parameter name="url" value="https://kyna.vn/" />
 	<listeners>
 		<!-- <listener class-name="reportConfig.TestListeners" /> -->
 		<!-- <listener class-name="reportConfig1.ExtentTestListener_2_Capture" /> -->
@@ -19,8 +19,7 @@
 	<test name="Run on Firefox UI">
 		<parameter name="Browser" value="firefox_ui" />
 		<classes>
-<!-- 			<class name="com.nopcommerce.users.TestSum" /> -->
-			<class name="com.nopcommerce.users.Level_11_Sort2" />
+			<class name="com.nopcommerce.users.TestSum" />
 		</classes>
 	</test>
 

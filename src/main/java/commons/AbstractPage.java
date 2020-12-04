@@ -19,12 +19,8 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 
 import io.qameta.allure.Step;
-import net.bytebuddy.asm.Advice.Enter;
-import pageOjectsAdmin.PageGeneratorManagerAdmin;
-import pageOjectsAdmin.productPageOjectAdmin;
 import pageOjectsUser.PageGeneratorManager;
 import pageOjectsUser.addressesPageObject;
 import pageOjectsUser.customerInfoPageObject;
@@ -33,10 +29,6 @@ import pageOjectsUser.ordersPageObject;
 import pageOjectsUser.rewardPointsPageObject;
 import pageOjectsUser.stockSubscriptionsObject;
 import pageUIsAdmin.AbstractPageUIAdmin;
-import pageUIsAdmin.CustomerAddNewPageUIAdmin;
-import pageUIsAdmin.CustomerPageUIAdmin;
-import pageUIsAdmin.HomePageUIAdmin;
-import pageUIsAdmin.ProductPageUIAdmin;
 import pageUIsUser.AbstractPageUI;
 
 public class AbstractPage {
