@@ -1,35 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" parallel="tests">
-  <parameter name="url" value="https://admin-demo.nopcommerce.com/admin/"/>
+  <parameter name="url" value="https://kyna.vn/"/>
   <listeners>
-    <listener class-name="reportConfigAllure.AllureTestListener"/>
     <listener class-name="commons.MethodListener"/>
   </listeners>
-  <test thread-count="5" name="Run on chrome UI(failed)" parallel="tests">
-    <parameter name="Browser" value="chrome_ui"/>
+  <test thread-count="5" name="Run on Firefox UI(failed)" parallel="tests">
+    <parameter name="Browser" value="firefox_ui"/>
     <classes>
-      <class name="com.nopcommerce.users.Level_10_Admin">
+      <class name="com.nopcommerce.users.TestSum">
         <methods>
-          <include name="TC_11_Search_Custom_With_Customer_And_Company"/>
-          <include name="TC_09_Search_Custom_With_Email"/>
-          <include name="TC_07_Go_Directly_To_Product_SKU"/>
-          <include name="TC_14_Add_New_Address_In_Customer_Detail"/>
-          <include name="TC_02_Search_With_Product_Name"/>
-          <include name="TC_03_Search_With_Product_Name_And_Parent_Category_Unchecked"/>
-          <include name="TC_06_Search_With_Product_Name_Manufacturer"/>
-          <include name="TC_04_Search_With_Product_Name_And_Parent_Category_checked"/>
-          <include name="TC_10_Search_Custom_With_FirstName_And_LastName"/>
-          <include name="TC_15_Delete_New_Address_In_Customer_Detail"/>
-          <include name="beforeClass"/>
-          <include name="TC_13_Edit_Customer_Add_New"/>
-          <include name="TC_01_Login_success"/>
-          <include name="TC_08_Create_New_Customer"/>
-          <include name="TC_12_Search_Custom_With_Full_Data"/>
-          <include name="TC_05_Search_With_Product_Name_And_Child_Category"/>
           <include name="afterClass"/>
+          <include name="TC_03_Random_Popup"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.nopcommerce.users.Level_10_Admin -->
+      </class> <!-- com.nopcommerce.users.TestSum -->
     </classes>
-  </test> <!-- Run on chrome UI(failed) -->
+  </test> <!-- Run on Firefox UI(failed) -->
 </suite> <!-- Failed suite [Suite] -->
