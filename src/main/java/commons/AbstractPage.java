@@ -359,7 +359,7 @@ public class AbstractPage {
 		if (elements.size() == 0) {
 			System.out.println("Element not in DOM");
 			return true;
-		} else if (elements.size() > 0 && elements.get(0).isDisplayed()) {
+		} else if (elements.size() > 0 && !elements.get(0).isDisplayed()) {
 			System.out.println("Element in DOM but not visible/display");
 			return true;
 		} else {
@@ -376,7 +376,7 @@ public class AbstractPage {
 		if (elements.size() == 0) {
 			System.out.println("Element not in DOM");
 			return true;
-		} else if (elements.size() > 0 && elements.get(0).isDisplayed()) {
+		} else if (elements.size() > 0 && !elements.get(0).isDisplayed()) {
 			System.out.println("Element in DOM but not visible/display");
 			return true;
 		} else {
@@ -599,13 +599,17 @@ public class AbstractPage {
 	}
 
 	public void waitToElementInvisible(WebDriver driver, String locator) {
-		explicitWait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
+		explicitWait = new WebDriverWait(driver, GlobalConstants.SHORT_TIMEOUT);
+		overrideGlobalTimeout(driver, GlobalConstants.SHORT_TIMEOUT);
 		explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(getByXpath(locator)));
+		overrideGlobalTimeout(driver, GlobalConstants.LONG_TIMEOUT);
 	}
 
 	public void waitToElementInvisible(WebDriver driver, String locator, String... values) {
-		explicitWait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
+		explicitWait = new WebDriverWait(driver, GlobalConstants.SHORT_TIMEOUT);
+		overrideGlobalTimeout(driver, GlobalConstants.SHORT_TIMEOUT);
 		explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(getByXpath(getDynamicLocator(locator, values))));
+		overrideGlobalTimeout(driver, GlobalConstants.LONG_TIMEOUT);
 	}
 
 	public void waitToElementClickAble(WebDriver driver, String locator) {
