@@ -967,3 +967,31 @@ Session ID: 474dd88a-dbbf-469e-ad5e-ed722da781f3
 2020-12-10 15:15:46,764 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Sub_Categories - Step 05:click search button
 2020-12-10 15:17:47,312 INFO  com.nopcommerce.users.Level_10_Admin - OS name = windows 10
 2020-12-10 15:17:48,085 INFO  com.nopcommerce.users.Level_10_Admin - ---------- QUIT BROWSER SUCCESS ----------
+2020-12-11 15:20:35,415 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+2020-12-11 15:20:35,453 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+2020-12-11 15:20:35,480 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+2020-12-11 15:20:35,506 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+2020-12-11 15:20:35,533 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+2020-12-11 15:20:38,400 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+2020-12-11 15:20:44,767 INFO  com.nopcommerce.common.Common_01_Register - OS name = windows 10
+2020-12-11 15:20:45,440 INFO  com.nopcommerce.common.Common_01_Register - ---------- QUIT BROWSER SUCCESS ----------
+2020-12-11 15:20:52,745 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
+2020-12-11 15:20:53,623 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
+2020-12-11 15:20:55,504 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
+2020-12-11 15:20:56,787 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
+2020-12-11 15:20:57,957 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
+2020-12-11 15:21:19,241 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+2020-12-11 15:21:19,273 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+2020-12-11 15:21:19,302 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+2020-12-11 15:21:19,357 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+2020-12-11 15:21:19,405 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+2020-12-11 15:21:19,694 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+2020-12-11 15:21:19,723 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+2020-12-11 15:21:19,751 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+2020-12-11 15:21:47,459 INFO  com.nopcommerce.users.Level_09_Search -  -------------------------- PASSED -------------------------- 
+2020-12-11 15:21:48,715 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 01:Input item not exits
+2020-12-11 15:21:48,767 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 02:click checkbox advance search
+2020-12-11 15:21:49,013 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 03:click dropdown sellect computers
+2020-12-11 15:21:49,303 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 04:click search button
+2020-12-11 15:21:50,398 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 05:Verify error message not found item
+2020-12-11 15:21:51,201 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Sub_Categories - Step 05:click search button
