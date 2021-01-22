@@ -2,124 +2,124 @@
 <testng-results skipped="0" failed="0" ignored="0" total="25" passed="25">
   <reporter-output>
     <line>
-      <![CDATA[2020-12-11 15:20:35,415 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+      <![CDATA[2021-01-14 10:07:22,070 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
 ]]>
     </line>
     <line>
-      <![CDATA[2020-12-11 15:20:35,453 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+      <![CDATA[2021-01-14 10:07:22,203 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
 ]]>
     </line>
     <line>
-      <![CDATA[2020-12-11 15:20:35,480 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+      <![CDATA[2021-01-14 10:07:22,233 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
 ]]>
     </line>
     <line>
-      <![CDATA[2020-12-11 15:20:35,506 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+      <![CDATA[2021-01-14 10:07:22,262 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
 ]]>
     </line>
     <line>
-      <![CDATA[2020-12-11 15:20:35,533 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+      <![CDATA[2021-01-14 10:07:22,292 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
 ]]>
     </line>
     <line>
-      <![CDATA[2020-12-11 15:20:38,400 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+      <![CDATA[2021-01-14 10:07:25,318 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
 ]]>
     </line>
     <line>
-      <![CDATA[2020-12-11 15:20:44,767 INFO  com.nopcommerce.common.Common_01_Register - OS name = windows 10
+      <![CDATA[2021-01-14 10:07:32,186 INFO  com.nopcommerce.common.Common_01_Register - OS name = windows 10
 ]]>
     </line>
     <line>
-      <![CDATA[2020-12-11 15:20:45,440 INFO  com.nopcommerce.common.Common_01_Register - ---------- QUIT BROWSER SUCCESS ----------
+      <![CDATA[2021-01-14 10:07:32,791 INFO  com.nopcommerce.common.Common_01_Register - ---------- QUIT BROWSER SUCCESS ----------
 ]]>
     </line>
     <line>
-      <![CDATA[2020-12-11 15:20:52,745 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
+      <![CDATA[2021-01-14 10:07:39,715 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
 ]]>
     </line>
     <line>
-      <![CDATA[2020-12-11 15:20:53,623 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
+      <![CDATA[2021-01-14 10:07:40,587 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
 ]]>
     </line>
     <line>
-      <![CDATA[2020-12-11 15:20:55,504 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
+      <![CDATA[2021-01-14 10:07:42,344 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
 ]]>
     </line>
     <line>
-      <![CDATA[2020-12-11 15:20:56,787 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
+      <![CDATA[2021-01-14 10:07:44,276 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
 ]]>
     </line>
     <line>
-      <![CDATA[2020-12-11 15:20:57,957 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
+      <![CDATA[2021-01-14 10:07:45,441 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
 ]]>
     </line>
     <line>
-      <![CDATA[2020-12-11 15:21:19,241 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+      <![CDATA[2021-01-14 10:08:06,641 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
 ]]>
     </line>
     <line>
-      <![CDATA[2020-12-11 15:21:19,273 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+      <![CDATA[2021-01-14 10:08:06,688 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
 ]]>
     </line>
     <line>
-      <![CDATA[2020-12-11 15:21:19,302 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+      <![CDATA[2021-01-14 10:08:06,721 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
 ]]>
     </line>
     <line>
-      <![CDATA[2020-12-11 15:21:19,357 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+      <![CDATA[2021-01-14 10:08:06,782 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
 ]]>
     </line>
     <line>
-      <![CDATA[2020-12-11 15:21:19,405 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+      <![CDATA[2021-01-14 10:08:06,835 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
 ]]>
     </line>
     <line>
-      <![CDATA[2020-12-11 15:21:19,694 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+      <![CDATA[2021-01-14 10:08:07,112 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
 ]]>
     </line>
     <line>
-      <![CDATA[2020-12-11 15:21:19,723 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+      <![CDATA[2021-01-14 10:08:07,141 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
 ]]>
     </line>
     <line>
-      <![CDATA[2020-12-11 15:21:19,751 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+      <![CDATA[2021-01-14 10:08:07,174 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
 ]]>
     </line>
     <line>
-      <![CDATA[2020-12-11 15:21:47,459 INFO  com.nopcommerce.users.Level_09_Search -  -------------------------- PASSED -------------------------- 
+      <![CDATA[2021-01-14 10:08:36,176 INFO  com.nopcommerce.users.Level_09_Search -  -------------------------- PASSED -------------------------- 
 ]]>
     </line>
     <line>
-      <![CDATA[2020-12-11 15:21:48,715 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 01:Input item not exits
+      <![CDATA[2021-01-14 10:08:37,381 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 01:Input item not exits
 ]]>
     </line>
     <line>
-      <![CDATA[2020-12-11 15:21:48,767 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 02:click checkbox advance search
+      <![CDATA[2021-01-14 10:08:37,439 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 02:click checkbox advance search
 ]]>
     </line>
     <line>
-      <![CDATA[2020-12-11 15:21:49,013 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 03:click dropdown sellect computers
+      <![CDATA[2021-01-14 10:08:37,686 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 03:click dropdown sellect computers
 ]]>
     </line>
     <line>
-      <![CDATA[2020-12-11 15:21:49,303 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 04:click search button
+      <![CDATA[2021-01-14 10:08:37,961 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 04:click search button
 ]]>
     </line>
     <line>
-      <![CDATA[2020-12-11 15:21:50,398 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 05:Verify error message not found item
+      <![CDATA[2021-01-14 10:08:39,016 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 05:Verify error message not found item
 ]]>
     </line>
     <line>
-      <![CDATA[2020-12-11 15:21:51,201 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Sub_Categories - Step 05:click search button
+      <![CDATA[2021-01-14 10:08:39,816 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Sub_Categories - Step 05:click search button
 ]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="113792" started-at="2020-12-11T08:20:24Z" finished-at="2020-12-11T08:22:18Z">
+  <suite name="Suite" duration-ms="112663" started-at="2021-01-14T03:07:11Z" finished-at="2021-01-14T03:09:03Z">
     <groups>
     </groups>
-    <test name="Run on Firefox UI" duration-ms="113792" started-at="2020-12-11T08:20:24Z" finished-at="2020-12-11T08:22:18Z">
+    <test name="Run on Firefox UI" duration-ms="112663" started-at="2021-01-14T03:07:11Z" finished-at="2021-01-14T03:09:03Z">
       <class name="com.nopcommerce.users.Level_11_Sort">
-        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.users.Level_11_Sort@27a0a5a2]" name="beforeClass" is-config="true" duration-ms="8685" started-at="2020-12-11T08:21:58Z" finished-at="2020-12-11T08:22:07Z">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.users.Level_11_Sort@47a64f7d]" name="beforeClass" is-config="true" duration-ms="5963" started-at="2021-01-14T03:08:48Z" finished-at="2021-01-14T03:08:54Z">
           <params>
             <param index="0">
               <value>
@@ -135,17 +135,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="TC_01_Search_With_Empty_Data()[pri:0, instance:com.nopcommerce.users.Level_11_Sort@27a0a5a2]" name="TC_01_Search_With_Empty_Data" duration-ms="11000" started-at="2020-12-11T08:22:07Z" finished-at="2020-12-11T08:22:18Z">
+        <test-method status="PASS" signature="TC_01_Search_With_Empty_Data()[pri:0, instance:com.nopcommerce.users.Level_11_Sort@47a64f7d]" name="TC_01_Search_With_Empty_Data" duration-ms="8809" started-at="2021-01-14T03:08:54Z" finished-at="2021-01-14T03:09:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_01_Search_With_Empty_Data -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.nopcommerce.users.Level_11_Sort@27a0a5a2]" name="afterClass" is-config="true" duration-ms="516" started-at="2020-12-11T08:22:18Z" finished-at="2020-12-11T08:22:18Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.nopcommerce.users.Level_11_Sort@47a64f7d]" name="afterClass" is-config="true" duration-ms="566" started-at="2021-01-14T03:09:03Z" finished-at="2021-01-14T03:09:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.nopcommerce.users.Level_11_Sort -->
       <class name="com.nopcommerce.users.Level_09_Search">
-        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.users.Level_09_Search@33d05366]" name="beforeClass" is-config="true" duration-ms="6391" started-at="2020-12-11T08:21:35Z" finished-at="2020-12-11T08:21:42Z">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.users.Level_09_Search@36dce7ed]" name="beforeClass" is-config="true" duration-ms="8329" started-at="2021-01-14T03:08:22Z" finished-at="2021-01-14T03:08:30Z">
           <params>
             <param index="0">
               <value>
@@ -161,81 +161,81 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="TC_01_Search_With_Empty_Data()[pri:0, instance:com.nopcommerce.users.Level_09_Search@33d05366]" name="TC_01_Search_With_Empty_Data" duration-ms="2928" started-at="2020-12-11T08:21:42Z" finished-at="2020-12-11T08:21:45Z">
+        <test-method status="PASS" signature="TC_01_Search_With_Empty_Data()[pri:0, instance:com.nopcommerce.users.Level_09_Search@36dce7ed]" name="TC_01_Search_With_Empty_Data" duration-ms="2785" started-at="2021-01-14T03:08:30Z" finished-at="2021-01-14T03:08:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_01_Search_With_Empty_Data -->
-        <test-method status="PASS" signature="TC_02_Search_With_Data_Not_Exist()[pri:0, instance:com.nopcommerce.users.Level_09_Search@33d05366]" name="TC_02_Search_With_Data_Not_Exist" duration-ms="1170" started-at="2020-12-11T08:21:45Z" finished-at="2020-12-11T08:21:46Z">
+        <test-method status="PASS" signature="TC_02_Search_With_Data_Not_Exist()[pri:0, instance:com.nopcommerce.users.Level_09_Search@36dce7ed]" name="TC_02_Search_With_Data_Not_Exist" duration-ms="1780" started-at="2021-01-14T03:08:33Z" finished-at="2021-01-14T03:08:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_02_Search_With_Data_Not_Exist -->
-        <test-method status="PASS" signature="TC_03_Search_With_Data_Exist()[pri:0, instance:com.nopcommerce.users.Level_09_Search@33d05366]" name="TC_03_Search_With_Data_Exist" duration-ms="1253" started-at="2020-12-11T08:21:46Z" finished-at="2020-12-11T08:21:47Z">
+        <test-method status="PASS" signature="TC_03_Search_With_Data_Exist()[pri:0, instance:com.nopcommerce.users.Level_09_Search@36dce7ed]" name="TC_03_Search_With_Data_Exist" duration-ms="1205" started-at="2021-01-14T03:08:34Z" finished-at="2021-01-14T03:08:36Z">
           <reporter-output>
             <line>
-              <![CDATA[2020-12-11 15:21:47,459 INFO  com.nopcommerce.users.Level_09_Search -  -------------------------- PASSED -------------------------- 
+              <![CDATA[2021-01-14 10:08:36,176 INFO  com.nopcommerce.users.Level_09_Search -  -------------------------- PASSED -------------------------- 
 ]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC_03_Search_With_Data_Exist -->
-        <test-method status="PASS" signature="TC_04_Search_With_Product_Name()[pri:0, instance:com.nopcommerce.users.Level_09_Search@33d05366]" name="TC_04_Search_With_Product_Name" duration-ms="1251" started-at="2020-12-11T08:21:47Z" finished-at="2020-12-11T08:21:48Z">
+        <test-method status="PASS" signature="TC_04_Search_With_Product_Name()[pri:0, instance:com.nopcommerce.users.Level_09_Search@36dce7ed]" name="TC_04_Search_With_Product_Name" duration-ms="1182" started-at="2021-01-14T03:08:36Z" finished-at="2021-01-14T03:08:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_04_Search_With_Product_Name -->
-        <test-method status="PASS" signature="TC_05_Advance_Search_With_Parent_Categories()[pri:0, instance:com.nopcommerce.users.Level_09_Search@33d05366]" name="TC_05_Advance_Search_With_Parent_Categories" duration-ms="1737" started-at="2020-12-11T08:21:48Z" finished-at="2020-12-11T08:21:50Z">
+        <test-method status="PASS" signature="TC_05_Advance_Search_With_Parent_Categories()[pri:0, instance:com.nopcommerce.users.Level_09_Search@36dce7ed]" name="TC_05_Advance_Search_With_Parent_Categories" duration-ms="1688" started-at="2021-01-14T03:08:37Z" finished-at="2021-01-14T03:08:39Z">
           <reporter-output>
             <line>
-              <![CDATA[2020-12-11 15:21:48,715 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 01:Input item not exits
+              <![CDATA[2021-01-14 10:08:37,381 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 01:Input item not exits
 ]]>
             </line>
             <line>
-              <![CDATA[2020-12-11 15:21:48,767 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 02:click checkbox advance search
+              <![CDATA[2021-01-14 10:08:37,439 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 02:click checkbox advance search
 ]]>
             </line>
             <line>
-              <![CDATA[2020-12-11 15:21:49,013 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 03:click dropdown sellect computers
+              <![CDATA[2021-01-14 10:08:37,686 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 03:click dropdown sellect computers
 ]]>
             </line>
             <line>
-              <![CDATA[2020-12-11 15:21:49,303 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 04:click search button
+              <![CDATA[2021-01-14 10:08:37,961 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 04:click search button
 ]]>
             </line>
             <line>
-              <![CDATA[2020-12-11 15:21:50,398 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 05:Verify error message not found item
+              <![CDATA[2021-01-14 10:08:39,016 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Parent_Categories - Step 05:Verify error message not found item
 ]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC_05_Advance_Search_With_Parent_Categories -->
-        <test-method status="PASS" signature="TC_06_Advance_Search_With_Sub_Categories()[pri:0, instance:com.nopcommerce.users.Level_09_Search@33d05366]" name="TC_06_Advance_Search_With_Sub_Categories" duration-ms="1906" started-at="2020-12-11T08:21:50Z" finished-at="2020-12-11T08:21:52Z">
+        <test-method status="PASS" signature="TC_06_Advance_Search_With_Sub_Categories()[pri:0, instance:com.nopcommerce.users.Level_09_Search@36dce7ed]" name="TC_06_Advance_Search_With_Sub_Categories" duration-ms="1919" started-at="2021-01-14T03:08:39Z" finished-at="2021-01-14T03:08:40Z">
           <reporter-output>
             <line>
-              <![CDATA[2020-12-11 15:21:51,201 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Sub_Categories - Step 05:click search button
+              <![CDATA[2021-01-14 10:08:39,816 INFO  com.nopcommerce.users.Level_09_Search - Advance_Search_With_Sub_Categories - Step 05:click search button
 ]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC_06_Advance_Search_With_Sub_Categories -->
-        <test-method status="PASS" signature="TC_07_Advance_Search_With_Incorrect_Manufacturer()[pri:0, instance:com.nopcommerce.users.Level_09_Search@33d05366]" name="TC_07_Advance_Search_With_Incorrect_Manufacturer" duration-ms="1389" started-at="2020-12-11T08:21:52Z" finished-at="2020-12-11T08:21:53Z">
+        <test-method status="PASS" signature="TC_07_Advance_Search_With_Incorrect_Manufacturer()[pri:0, instance:com.nopcommerce.users.Level_09_Search@36dce7ed]" name="TC_07_Advance_Search_With_Incorrect_Manufacturer" duration-ms="1468" started-at="2021-01-14T03:08:40Z" finished-at="2021-01-14T03:08:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_07_Advance_Search_With_Incorrect_Manufacturer -->
-        <test-method status="PASS" signature="TC_08_Advance_Search_With_Price_Range()[pri:0, instance:com.nopcommerce.users.Level_09_Search@33d05366]" name="TC_08_Advance_Search_With_Price_Range" duration-ms="1551" started-at="2020-12-11T08:21:53Z" finished-at="2020-12-11T08:21:55Z">
+        <test-method status="PASS" signature="TC_08_Advance_Search_With_Price_Range()[pri:0, instance:com.nopcommerce.users.Level_09_Search@36dce7ed]" name="TC_08_Advance_Search_With_Price_Range" duration-ms="1553" started-at="2021-01-14T03:08:42Z" finished-at="2021-01-14T03:08:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_08_Advance_Search_With_Price_Range -->
-        <test-method status="PASS" signature="TC_09_Advance_Search_With_Price_Range_less()[pri:0, instance:com.nopcommerce.users.Level_09_Search@33d05366]" name="TC_09_Advance_Search_With_Price_Range_less" duration-ms="1186" started-at="2020-12-11T08:21:55Z" finished-at="2020-12-11T08:21:56Z">
+        <test-method status="PASS" signature="TC_09_Advance_Search_With_Price_Range_less()[pri:0, instance:com.nopcommerce.users.Level_09_Search@36dce7ed]" name="TC_09_Advance_Search_With_Price_Range_less" duration-ms="1852" started-at="2021-01-14T03:08:44Z" finished-at="2021-01-14T03:08:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_09_Advance_Search_With_Price_Range_less -->
-        <test-method status="PASS" signature="TC_10_Advance_Search_With_Price_Range_Greater_Than_Product_Price()[pri:0, instance:com.nopcommerce.users.Level_09_Search@33d05366]" name="TC_10_Advance_Search_With_Price_Range_Greater_Than_Product_Price" duration-ms="1292" started-at="2020-12-11T08:21:56Z" finished-at="2020-12-11T08:21:57Z">
+        <test-method status="PASS" signature="TC_10_Advance_Search_With_Price_Range_Greater_Than_Product_Price()[pri:0, instance:com.nopcommerce.users.Level_09_Search@36dce7ed]" name="TC_10_Advance_Search_With_Price_Range_Greater_Than_Product_Price" duration-ms="1883" started-at="2021-01-14T03:08:45Z" finished-at="2021-01-14T03:08:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_10_Advance_Search_With_Price_Range_Greater_Than_Product_Price -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.nopcommerce.users.Level_09_Search@33d05366]" name="afterClass" is-config="true" duration-ms="556" started-at="2020-12-11T08:21:57Z" finished-at="2020-12-11T08:21:58Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.nopcommerce.users.Level_09_Search@36dce7ed]" name="afterClass" is-config="true" duration-ms="588" started-at="2021-01-14T03:08:47Z" finished-at="2021-01-14T03:08:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.nopcommerce.users.Level_09_Search -->
       <class name="com.nopcommerce.users.Level_08_Login">
-        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.users.Level_08_Login@36dce7ed]" name="beforeClass" is-config="true" duration-ms="4566" started-at="2020-12-11T08:20:45Z" finished-at="2020-12-11T08:20:50Z">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.users.Level_08_Login@5af5def9]" name="beforeClass" is-config="true" duration-ms="5067" started-at="2021-01-14T03:07:32Z" finished-at="2021-01-14T03:07:37Z">
           <params>
             <param index="0">
               <value>
@@ -251,57 +251,57 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="TC_01_Log_In_Empty_Data()[pri:0, instance:com.nopcommerce.users.Level_08_Login@36dce7ed]" name="TC_01_Log_In_Empty_Data" duration-ms="2738" started-at="2020-12-11T08:20:50Z" finished-at="2020-12-11T08:20:52Z">
+        <test-method status="PASS" signature="TC_01_Log_In_Empty_Data()[pri:0, instance:com.nopcommerce.users.Level_08_Login@5af5def9]" name="TC_01_Log_In_Empty_Data" duration-ms="1832" started-at="2021-01-14T03:07:37Z" finished-at="2021-01-14T03:07:39Z">
           <reporter-output>
             <line>
-              <![CDATA[2020-12-11 15:20:52,745 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
+              <![CDATA[2021-01-14 10:07:39,715 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
 ]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC_01_Log_In_Empty_Data -->
-        <test-method status="PASS" signature="TC_02_Log_In_Invalid_Email()[pri:0, instance:com.nopcommerce.users.Level_08_Login@36dce7ed]" name="TC_02_Log_In_Invalid_Email" duration-ms="876" started-at="2020-12-11T08:20:52Z" finished-at="2020-12-11T08:20:53Z">
+        <test-method status="PASS" signature="TC_02_Log_In_Invalid_Email()[pri:0, instance:com.nopcommerce.users.Level_08_Login@5af5def9]" name="TC_02_Log_In_Invalid_Email" duration-ms="871" started-at="2021-01-14T03:07:39Z" finished-at="2021-01-14T03:07:40Z">
           <reporter-output>
             <line>
-              <![CDATA[2020-12-11 15:20:53,623 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
+              <![CDATA[2021-01-14 10:07:40,587 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
 ]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC_02_Log_In_Invalid_Email -->
-        <test-method status="PASS" signature="TC_03_Log_In_Email_Not_Register()[pri:0, instance:com.nopcommerce.users.Level_08_Login@36dce7ed]" name="TC_03_Log_In_Email_Not_Register" duration-ms="1880" started-at="2020-12-11T08:20:53Z" finished-at="2020-12-11T08:20:55Z">
+        <test-method status="PASS" signature="TC_03_Log_In_Email_Not_Register()[pri:0, instance:com.nopcommerce.users.Level_08_Login@5af5def9]" name="TC_03_Log_In_Email_Not_Register" duration-ms="1755" started-at="2021-01-14T03:07:40Z" finished-at="2021-01-14T03:07:42Z">
           <reporter-output>
             <line>
-              <![CDATA[2020-12-11 15:20:55,504 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
+              <![CDATA[2021-01-14 10:07:42,344 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
 ]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC_03_Log_In_Email_Not_Register -->
-        <test-method status="PASS" signature="TC_03_Log_In_Pass_Empty()[pri:0, instance:com.nopcommerce.users.Level_08_Login@36dce7ed]" name="TC_03_Log_In_Pass_Empty" duration-ms="1281" started-at="2020-12-11T08:20:55Z" finished-at="2020-12-11T08:20:56Z">
+        <test-method status="PASS" signature="TC_03_Log_In_Pass_Empty()[pri:0, instance:com.nopcommerce.users.Level_08_Login@5af5def9]" name="TC_03_Log_In_Pass_Empty" duration-ms="1931" started-at="2021-01-14T03:07:42Z" finished-at="2021-01-14T03:07:44Z">
           <reporter-output>
             <line>
-              <![CDATA[2020-12-11 15:20:56,787 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
+              <![CDATA[2021-01-14 10:07:44,276 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
 ]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC_03_Log_In_Pass_Empty -->
-        <test-method status="PASS" signature="TC_04_Log_In_Wrong_Pass()[pri:0, instance:com.nopcommerce.users.Level_08_Login@36dce7ed]" name="TC_04_Log_In_Wrong_Pass" duration-ms="1168" started-at="2020-12-11T08:20:56Z" finished-at="2020-12-11T08:20:57Z">
+        <test-method status="PASS" signature="TC_04_Log_In_Wrong_Pass()[pri:0, instance:com.nopcommerce.users.Level_08_Login@5af5def9]" name="TC_04_Log_In_Wrong_Pass" duration-ms="1163" started-at="2021-01-14T03:07:44Z" finished-at="2021-01-14T03:07:45Z">
           <reporter-output>
             <line>
-              <![CDATA[2020-12-11 15:20:57,957 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
+              <![CDATA[2021-01-14 10:07:45,441 INFO  com.nopcommerce.users.Level_08_Login -  -------------------------- PASSED -------------------------- 
 ]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC_04_Log_In_Wrong_Pass -->
-        <test-method status="PASS" signature="TC_05_Log_In_Success()[pri:0, instance:com.nopcommerce.users.Level_08_Login@36dce7ed]" name="TC_05_Log_In_Success" duration-ms="5598" started-at="2020-12-11T08:20:57Z" finished-at="2020-12-11T08:21:03Z">
+        <test-method status="PASS" signature="TC_05_Log_In_Success()[pri:0, instance:com.nopcommerce.users.Level_08_Login@5af5def9]" name="TC_05_Log_In_Success" duration-ms="6109" started-at="2021-01-14T03:07:45Z" finished-at="2021-01-14T03:07:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_05_Log_In_Success -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.nopcommerce.users.Level_08_Login@36dce7ed]" name="afterClass" is-config="true" duration-ms="517" started-at="2020-12-11T08:21:03Z" finished-at="2020-12-11T08:21:04Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.nopcommerce.users.Level_08_Login@5af5def9]" name="afterClass" is-config="true" duration-ms="479" started-at="2021-01-14T03:07:51Z" finished-at="2021-01-14T03:07:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.nopcommerce.users.Level_08_Login -->
       <class name="com.nopcommerce.users.Level_08_My_Account">
-        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.users.Level_08_My_Account@47a64f7d]" name="beforeClass" is-config="true" duration-ms="5150" started-at="2020-12-11T08:21:04Z" finished-at="2020-12-11T08:21:09Z">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.users.Level_08_My_Account@3a45c42a]" name="beforeClass" is-config="true" duration-ms="4628" started-at="2021-01-14T03:07:52Z" finished-at="2021-01-14T03:07:56Z">
           <params>
             <param index="0">
               <value>
@@ -317,61 +317,61 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="TC_01_Login()[pri:0, instance:com.nopcommerce.users.Level_08_My_Account@47a64f7d]" name="TC_01_Login" duration-ms="4207" started-at="2020-12-11T08:21:09Z" finished-at="2020-12-11T08:21:13Z">
+        <test-method status="PASS" signature="TC_01_Login()[pri:0, instance:com.nopcommerce.users.Level_08_My_Account@3a45c42a]" name="TC_01_Login" duration-ms="3955" started-at="2021-01-14T03:07:56Z" finished-at="2021-01-14T03:08:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_01_Login -->
-        <test-method status="PASS" signature="TC_02_My_Account()[pri:0, instance:com.nopcommerce.users.Level_08_My_Account@47a64f7d]" name="TC_02_My_Account" duration-ms="6314" started-at="2020-12-11T08:21:13Z" finished-at="2020-12-11T08:21:19Z">
+        <test-method status="PASS" signature="TC_02_My_Account()[pri:0, instance:com.nopcommerce.users.Level_08_My_Account@3a45c42a]" name="TC_02_My_Account" duration-ms="6555" started-at="2021-01-14T03:08:00Z" finished-at="2021-01-14T03:08:07Z">
           <reporter-output>
             <line>
-              <![CDATA[2020-12-11 15:21:19,241 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+              <![CDATA[2021-01-14 10:08:06,641 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
 ]]>
             </line>
             <line>
-              <![CDATA[2020-12-11 15:21:19,273 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+              <![CDATA[2021-01-14 10:08:06,688 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
 ]]>
             </line>
             <line>
-              <![CDATA[2020-12-11 15:21:19,302 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+              <![CDATA[2021-01-14 10:08:06,721 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
 ]]>
             </line>
             <line>
-              <![CDATA[2020-12-11 15:21:19,357 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+              <![CDATA[2021-01-14 10:08:06,782 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
 ]]>
             </line>
             <line>
-              <![CDATA[2020-12-11 15:21:19,405 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+              <![CDATA[2021-01-14 10:08:06,835 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
 ]]>
             </line>
             <line>
-              <![CDATA[2020-12-11 15:21:19,694 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+              <![CDATA[2021-01-14 10:08:07,112 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
 ]]>
             </line>
             <line>
-              <![CDATA[2020-12-11 15:21:19,723 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+              <![CDATA[2021-01-14 10:08:07,141 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
 ]]>
             </line>
             <line>
-              <![CDATA[2020-12-11 15:21:19,751 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
+              <![CDATA[2021-01-14 10:08:07,174 INFO  com.nopcommerce.users.Level_08_My_Account -  -------------------------- PASSED -------------------------- 
 ]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC_02_My_Account -->
-        <test-method status="PASS" signature="TC_03_Addresses()[pri:0, instance:com.nopcommerce.users.Level_08_My_Account@47a64f7d]" name="TC_03_Addresses" duration-ms="11460" started-at="2020-12-11T08:21:19Z" finished-at="2020-12-11T08:21:31Z">
+        <test-method status="PASS" signature="TC_03_Addresses()[pri:0, instance:com.nopcommerce.users.Level_08_My_Account@3a45c42a]" name="TC_03_Addresses" duration-ms="10168" started-at="2021-01-14T03:08:07Z" finished-at="2021-01-14T03:08:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_03_Addresses -->
-        <test-method status="PASS" signature="TC_04_Change_Password()[pri:0, instance:com.nopcommerce.users.Level_08_My_Account@47a64f7d]" name="TC_04_Change_Password" duration-ms="3975" started-at="2020-12-11T08:21:31Z" finished-at="2020-12-11T08:21:35Z">
+        <test-method status="PASS" signature="TC_04_Change_Password()[pri:0, instance:com.nopcommerce.users.Level_08_My_Account@3a45c42a]" name="TC_04_Change_Password" duration-ms="4164" started-at="2021-01-14T03:08:17Z" finished-at="2021-01-14T03:08:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_04_Change_Password -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.nopcommerce.users.Level_08_My_Account@47a64f7d]" name="afterClass" is-config="true" duration-ms="522" started-at="2020-12-11T08:21:35Z" finished-at="2020-12-11T08:21:35Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.nopcommerce.users.Level_08_My_Account@3a45c42a]" name="afterClass" is-config="true" duration-ms="572" started-at="2021-01-14T03:08:21Z" finished-at="2021-01-14T03:08:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.nopcommerce.users.Level_08_My_Account -->
       <class name="com.nopcommerce.common.Common_01_Register">
-        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.common.Common_01_Register@3a45c42a]" name="beforeClass" is-config="true" duration-ms="7638" started-at="2020-12-11T08:20:24Z" finished-at="2020-12-11T08:20:32Z">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.common.Common_01_Register@57a4d5ee]" name="beforeClass" is-config="true" duration-ms="7757" started-at="2021-01-14T03:07:11Z" finished-at="2021-01-14T03:07:18Z">
           <params>
             <param index="0">
               <value>
@@ -387,50 +387,50 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="TC_01_Register_Empty_Data()[pri:0, instance:com.nopcommerce.common.Common_01_Register@3a45c42a]" name="TC_01_Register_Empty_Data" duration-ms="3118" started-at="2020-12-11T08:20:32Z" finished-at="2020-12-11T08:20:35Z">
+        <test-method status="PASS" signature="TC_01_Register_Empty_Data()[pri:0, instance:com.nopcommerce.common.Common_01_Register@57a4d5ee]" name="TC_01_Register_Empty_Data" duration-ms="3462" started-at="2021-01-14T03:07:18Z" finished-at="2021-01-14T03:07:22Z">
           <reporter-output>
             <line>
-              <![CDATA[2020-12-11 15:20:35,415 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+              <![CDATA[2021-01-14 10:07:22,070 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
 ]]>
             </line>
             <line>
-              <![CDATA[2020-12-11 15:20:35,453 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+              <![CDATA[2021-01-14 10:07:22,203 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
 ]]>
             </line>
             <line>
-              <![CDATA[2020-12-11 15:20:35,480 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+              <![CDATA[2021-01-14 10:07:22,233 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
 ]]>
             </line>
             <line>
-              <![CDATA[2020-12-11 15:20:35,506 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+              <![CDATA[2021-01-14 10:07:22,262 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
 ]]>
             </line>
             <line>
-              <![CDATA[2020-12-11 15:20:35,533 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+              <![CDATA[2021-01-14 10:07:22,292 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
 ]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC_01_Register_Empty_Data -->
-        <test-method status="PASS" signature="TC_02_Register_Wrong_Email()[pri:0, instance:com.nopcommerce.common.Common_01_Register@3a45c42a]" name="TC_02_Register_Wrong_Email" duration-ms="2790" started-at="2020-12-11T08:20:35Z" finished-at="2020-12-11T08:20:38Z">
+        <test-method status="PASS" signature="TC_02_Register_Wrong_Email()[pri:0, instance:com.nopcommerce.common.Common_01_Register@57a4d5ee]" name="TC_02_Register_Wrong_Email" duration-ms="2734" started-at="2021-01-14T03:07:22Z" finished-at="2021-01-14T03:07:25Z">
           <reporter-output>
             <line>
-              <![CDATA[2020-12-11 15:20:38,400 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
+              <![CDATA[2021-01-14 10:07:25,318 INFO  com.nopcommerce.common.Common_01_Register -  -------------------------- PASSED -------------------------- 
 ]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC_02_Register_Wrong_Email -->
-        <test-method status="PASS" signature="TC_03_Register_Pass_At_Least_6()[pri:0, instance:com.nopcommerce.common.Common_01_Register@3a45c42a]" name="TC_03_Register_Pass_At_Least_6" duration-ms="975" started-at="2020-12-11T08:20:38Z" finished-at="2020-12-11T08:20:39Z">
+        <test-method status="PASS" signature="TC_03_Register_Pass_At_Least_6()[pri:0, instance:com.nopcommerce.common.Common_01_Register@57a4d5ee]" name="TC_03_Register_Pass_At_Least_6" duration-ms="980" started-at="2021-01-14T03:07:25Z" finished-at="2021-01-14T03:07:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_03_Register_Pass_At_Least_6 -->
-        <test-method status="PASS" signature="TC_04_Register_Success()[pri:0, instance:com.nopcommerce.common.Common_01_Register@3a45c42a]" name="TC_04_Register_Success" duration-ms="6059" started-at="2020-12-11T08:20:39Z" finished-at="2020-12-11T08:20:45Z">
+        <test-method status="PASS" signature="TC_04_Register_Success()[pri:0, instance:com.nopcommerce.common.Common_01_Register@57a4d5ee]" name="TC_04_Register_Success" duration-ms="6456" started-at="2021-01-14T03:07:26Z" finished-at="2021-01-14T03:07:32Z">
           <reporter-output>
             <line>
-              <![CDATA[2020-12-11 15:20:44,767 INFO  com.nopcommerce.common.Common_01_Register - OS name = windows 10
+              <![CDATA[2021-01-14 10:07:32,186 INFO  com.nopcommerce.common.Common_01_Register - OS name = windows 10
 ]]>
             </line>
             <line>
-              <![CDATA[2020-12-11 15:20:45,440 INFO  com.nopcommerce.common.Common_01_Register - ---------- QUIT BROWSER SUCCESS ----------
+              <![CDATA[2021-01-14 10:07:32,791 INFO  com.nopcommerce.common.Common_01_Register - ---------- QUIT BROWSER SUCCESS ----------
 ]]>
             </line>
           </reporter-output>
